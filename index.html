@@ -1,0 +1,119 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title data-i18n="title">☕ Chi offre il caffè? · La tazza magica</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600;700&family=Baloo+2:wght@400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- Bolle decorative -->
+<div class="bolla"></div>
+<div class="bolla"></div>
+<div class="bolla"></div>
+<div class="bolla"></div>
+<div class="bolla"></div>
+
+<!-- Selettore lingua -->
+<div class="lang-selector">
+    <button class="lang-toggle" id="langToggle" aria-label="Cambia lingua" aria-expanded="false">
+        <span class="lang-current">
+            <span class="flag">🇮🇹</span>
+            <span class="lang-code" data-i18n="lang.current">IT</span>
+        </span>
+        <svg class="chevron" viewBox="0 0 24 24" width="14" height="14" aria-hidden="true">
+            <path fill="currentColor" d="M7 10l5 5 5-5z"/>
+        </svg>
+    </button>
+    <ul class="lang-menu" id="langMenu" role="menu" aria-label="Seleziona lingua">
+        <li role="none"><button role="menuitem" data-lang="it" class="lang-option active"><span class="flag">🇮🇹</span> Italiano</button></li>
+        <li role="none"><button role="menuitem" data-lang="en" class="lang-option"><span class="flag">🇬🇧</span> English</button></li>
+        <li role="none"><button role="menuitem" data-lang="es" class="lang-option"><span class="flag">🇪🇸</span> Español</button></li>
+        <li role="none"><button role="menuitem" data-lang="fr" class="lang-option"><span class="flag">🇫🇷</span> Français</button></li>
+        <li role="none"><button role="menuitem" data-lang="de" class="lang-option"><span class="flag">🇩🇪</span> Deutsch</button></li>
+        <li role="none"><button role="menuitem" data-lang="pt" class="lang-option"><span class="flag">🇵🇹</span> Português</button></li>
+    </ul>
+</div>
+
+<div class="container">
+    <h1>
+        <span class="emoji">☕</span> <span data-i18n="h1">Chi offre il caffè?</span> <span class="emoji">✨</span>
+    </h1>
+    <div class="sottotitolo">
+        <span data-i18n="subtitle.prefix">Aggiungi i nomi, agita la</span>
+        <span class="evidenzia" data-i18n="subtitle.highlight">tazza magica</span>
+        <span data-i18n="subtitle.suffix">e scopri il malcapitato di turno</span> 🎉
+    </div>
+
+    <!-- TAZZA VIRTUALE ANIMATA -->
+    <div class="tazza-wrapper">
+        <div class="tazza-scena">
+            <div class="ombra"></div>
+            <div class="tazza" id="tazza">
+                <div class="vapore">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <div class="corpo-tazza">
+                    <div class="caffe"></div>
+                </div>
+                <div class="manico"></div>
+                <div class="piattino"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Input per aggiungere nome -->
+    <div class="input-group">
+        <div class="input-wrapper">
+            <input type="text" id="nomeInput" data-i18n-placeholder="input.placeholder" placeholder="Scrivi un nome... (es. Mario, Luisa, Carlo)" maxlength="30" autocomplete="off">
+        </div>
+        <button class="btn" id="addBtn" data-i18n="btn.add">➕ Aggiungi</button>
+    </div>
+
+    <!-- Lista partecipanti -->
+    <div class="lista-partecipanti">
+        <div class="lista-header">
+            <h2><span data-i18n="list.title">📌 Partecipanti</span></h2>
+            <span class="contatore" id="contatore" data-i18n="counter.zero">0 persone</span>
+        </div>
+        <ul class="partecipanti" id="listaPartecipanti"></ul>
+        <div id="emptyMessage" class="empty-message" data-i18n="list.empty">
+            Nessun partecipante... aggiungi almeno 2 nomi per iniziare! 👇
+        </div>
+    </div>
+
+    <!-- Pulsanti azione -->
+    <div class="azione">
+        <button class="btn btn-grande" id="sorteggiaBtn" data-i18n="btn.sorteggia">🎲 Agita la tazza e sorteggia</button>
+        <button class="btn btn-secondary" id="resetBtn" data-i18n="btn.reset">🔄 Reset</button>
+    </div>
+
+    <!-- Box risultato -->
+    <div class="risultato-box" id="risultatoBox" style="display: none;">
+        <div class="risultato-label" data-i18n="result.label">☕ OFFRE IL CAFFÈ</div>
+        <div class="risultato-nome" id="risultatoNome">—</div>
+        <div class="risultato-dettaglio" id="risultatoDettaglio"></div>
+    </div>
+
+    <!-- Regole sensate -->
+    <details class="regole">
+        <summary data-i18n="rules.summary">Regole sensate (da rispettare)</summary>
+        <ul id="regoleList"></ul>
+    </details>
+
+    <div class="footer-nota">
+        <span data-i18n="footer.text">💡 Regola d'oro: chi vince il sorteggio non paga... mai.</span>
+        <span class="cuore">❤</span>
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
