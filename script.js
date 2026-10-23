@@ -34,13 +34,38 @@
             'rules.5': '<strong>Il sorteggio è casuale</strong> e avviene con <code>crypto.getRandomValues</code> per una casualità più equa (dove supportato).',
             'rules.6': '<strong>Chi esce paga il caffè a tutti gli altri</strong>. Nessuna scusa! (Se siete in 2, il perdente offre all\'altro).',
             'rules.7': '<strong>Reset</strong> pulisce tutta la lista e ricomincia da zero — usalo con parsimonia.',
+            'rules.8': '<strong>Modifica nomi</strong>: clicca sul nome per rinominarlo (o usa la matitina). Il nome deve restare unico e non vuoto.',
+            'rules.9': '<strong>Preset</strong>: salva la lista attuale con un nome per ritrovarla. Puoi caricare o eliminare un preset in qualsiasi momento.',
             'footer.text': '💡 Regola d\'oro: chi vince il sorteggio non paga... mai.',
             'alert.emptyName': '⚠️ Dai, scrivi un nome!',
             'alert.duplicate': '⚠️ "{name}" c\'è già!',
             'alert.tooLong': 'Il nome non può superare i 30 caratteri.',
             'alert.needTwo': 'Servono almeno 2 partecipanti per sorteggiare chi offre il caffè! ☕',
             'confirm.reset': 'Vuoi davvero resettare tutto? La lista verrà svuotata. 🧹',
-            'lang.menuLabel': 'Seleziona lingua'
+            'lang.menuLabel': 'Seleziona lingua',
+            'preset.title': '💾 Preset salvati',
+            'preset.save': '💾 Salva preset',
+            'preset.empty': 'Nessun preset salvato. Aggiungi nomi e salva la tua lista preferita!',
+            'preset.loadBtn': 'Carica',
+            'preset.deleteBtn': 'Elimina preset',
+            'preset.modalTitle': 'Salva preset',
+            'preset.modalSubtitle': 'Dai un nome a questa lista per ritrovarla facilmente.',
+            'preset.namePlaceholder': 'Es. Colleghi ufficio, Amici del bar...',
+            'preset.cancel': 'Annulla',
+            'preset.confirm': 'Salva',
+            'preset.needNames': 'Aggiungi almeno un nome prima di salvare un preset!',
+            'preset.emptyName': 'Il nome del preset non può essere vuoto!',
+            'preset.saved': 'Preset "{name}" salvato!',
+            'preset.duplicateName': 'Esiste già un preset con questo nome. Scegline un altro.',
+            'preset.loaded': 'Preset "{name}" caricato!',
+            'preset.confirmDelete': 'Vuoi davvero eliminare il preset "{name}"?',
+            'preset.deleted': 'Preset "{name}" eliminato.',
+            'preset.countOne': '1 nome',
+            'preset.countMany': '{n} nomi',
+            'edit.tooltip': 'Clicca per modificare',
+            'edit.save': 'Salva',
+            'edit.duplicate': 'Questo nome esiste già!',
+            'edit.empty': 'Il nome non può essere vuoto!'
         },
         en: {
             'lang.current': 'EN',
@@ -70,13 +95,38 @@
             'rules.5': '<strong>The draw is random</strong> using <code>crypto.getRandomValues</code> for fairer randomness (where supported).',
             'rules.6': '<strong>Whoever is picked buys coffee for everyone else</strong>. No excuses! (If there are 2 of you, the loser buys for the other).',
             'rules.7': '<strong>Reset</strong> clears the whole list and starts from scratch — use sparingly.',
+            'rules.8': '<strong>Edit names</strong>: click on a name to rename it (or use the pencil). The name must stay unique and non-empty.',
+            'rules.9': '<strong>Presets</strong>: save the current list with a name to find it again. You can load or delete a preset at any time.',
             'footer.text': '💡 Golden rule: whoever wins the draw never pays... ever.',
             'alert.emptyName': '⚠️ Come on, type a name!',
             'alert.duplicate': '⚠️ "{name}" is already in the list!',
             'alert.tooLong': 'The name cannot exceed 30 characters.',
             'alert.needTwo': 'You need at least 2 participants to draw who buys the coffee! ☕',
             'confirm.reset': 'Do you really want to reset everything? The list will be cleared. 🧹',
-            'lang.menuLabel': 'Select language'
+            'lang.menuLabel': 'Select language',
+            'preset.title': '💾 Saved presets',
+            'preset.save': '💾 Save preset',
+            'preset.empty': 'No presets saved. Add names and save your favorite list!',
+            'preset.loadBtn': 'Load',
+            'preset.deleteBtn': 'Delete preset',
+            'preset.modalTitle': 'Save preset',
+            'preset.modalSubtitle': 'Give this list a name to find it easily.',
+            'preset.namePlaceholder': 'e.g. Office colleagues, Bar friends...',
+            'preset.cancel': 'Cancel',
+            'preset.confirm': 'Save',
+            'preset.needNames': 'Add at least one name before saving a preset!',
+            'preset.emptyName': 'Preset name cannot be empty!',
+            'preset.saved': 'Preset "{name}" saved!',
+            'preset.duplicateName': 'A preset with this name already exists. Choose another.',
+            'preset.loaded': 'Preset "{name}" loaded!',
+            'preset.confirmDelete': 'Do you really want to delete the preset "{name}"?',
+            'preset.deleted': 'Preset "{name}" deleted.',
+            'preset.countOne': '1 name',
+            'preset.countMany': '{n} names',
+            'edit.tooltip': 'Click to edit',
+            'edit.save': 'Save',
+            'edit.duplicate': 'This name already exists!',
+            'edit.empty': 'The name cannot be empty!'
         },
         es: {
             'lang.current': 'ES',
@@ -106,13 +156,38 @@
             'rules.5': '<strong>El sorteo es aleatorio</strong> y usa <code>crypto.getRandomValues</code> para una aleatoriedad más justa (donde esté disponible).',
             'rules.6': '<strong>Quien sale paga el café a todos los demás</strong>. ¡Sin excusas! (Si sois 2, el perdedor invita al otro).',
             'rules.7': '<strong>Reiniciar</strong> limpia toda la lista y empieza de cero — úsalo con moderación.',
+            'rules.8': '<strong>Editar nombres</strong>: haz clic en un nombre para renombrarlo (o usa el lápiz). El nombre debe seguir siendo único y no vacío.',
+            'rules.9': '<strong>Presets</strong>: guarda la lista actual con un nombre para encontrarla. Puedes cargar o eliminar un preset en cualquier momento.',
             'footer.text': '💡 Regla de oro: quien gana el sorteo no paga... nunca.',
             'alert.emptyName': '⚠️ ¡Vamos, escribe un nombre!',
             'alert.duplicate': '⚠️ ¡"{name}" ya está en la lista!',
             'alert.tooLong': 'El nombre no puede superar los 30 caracteres.',
             'alert.needTwo': '¡Necesitas al menos 2 participantes para sortear quién invita al café! ☕',
             'confirm.reset': '¿Seguro que quieres reiniciar todo? La lista se vaciará. 🧹',
-            'lang.menuLabel': 'Seleccionar idioma'
+            'lang.menuLabel': 'Seleccionar idioma',
+            'preset.title': '💾 Presets guardados',
+            'preset.save': '💾 Guardar preset',
+            'preset.empty': 'Ningún preset guardado. ¡Añade nombres y guarda tu lista favorita!',
+            'preset.loadBtn': 'Cargar',
+            'preset.deleteBtn': 'Eliminar preset',
+            'preset.modalTitle': 'Guardar preset',
+            'preset.modalSubtitle': 'Dale un nombre a esta lista para encontrarla fácilmente.',
+            'preset.namePlaceholder': 'Ej. Compañeros de oficina, Amigos del bar...',
+            'preset.cancel': 'Cancelar',
+            'preset.confirm': 'Guardar',
+            'preset.needNames': '¡Añade al menos un nombre antes de guardar un preset!',
+            'preset.emptyName': '¡El nombre del preset no puede estar vacío!',
+            'preset.saved': '¡Preset "{name}" guardado!',
+            'preset.duplicateName': 'Ya existe un preset con este nombre. Elige otro.',
+            'preset.loaded': '¡Preset "{name}" cargado!',
+            'preset.confirmDelete': '¿Seguro que quieres eliminar el preset "{name}"?',
+            'preset.deleted': 'Preset "{name}" eliminado.',
+            'preset.countOne': '1 nombre',
+            'preset.countMany': '{n} nombres',
+            'edit.tooltip': 'Clic para editar',
+            'edit.save': 'Guardar',
+            'edit.duplicate': '¡Este nombre ya existe!',
+            'edit.empty': '¡El nombre no puede estar vacío!'
         },
         fr: {
             'lang.current': 'FR',
@@ -142,13 +217,38 @@
             'rules.5': '<strong>Le tirage est aléatoire</strong> et utilise <code>crypto.getRandomValues</code> pour plus d\'équité (si disponible).',
             'rules.6': '<strong>Celui qui sort paie le café à tous les autres</strong>. Aucune excuse ! (Si vous êtes 2, le perdant offre à l\'autre).',
             'rules.7': '<strong>Réinitialiser</strong> vide toute la liste et recommence de zéro — à utiliser avec parcimonie.',
+            'rules.8': '<strong>Modifier les noms</strong> : clique sur un nom pour le renommer (ou utilise le crayon). Le nom doit rester unique et non vide.',
+            'rules.9': '<strong>Presets</strong> : sauvegarde la liste actuelle avec un nom pour la retrouver. Tu peux charger ou supprimer un preset à tout moment.',
             'footer.text': '💡 Règle d\'or : celui qui gagne le tirage ne paie... jamais.',
             'alert.emptyName': '⚠️ Allez, écris un nom !',
             'alert.duplicate': '⚠️ "{name}" est déjà dans la liste !',
             'alert.tooLong': 'Le nom ne peut pas dépasser 30 caractères.',
             'alert.needTwo': 'Il faut au moins 2 participants pour tirer au sort qui offre le café ! ☕',
             'confirm.reset': 'Veux-tu vraiment tout réinitialiser ? La liste sera vidée. 🧹',
-            'lang.menuLabel': 'Choisir la langue'
+            'lang.menuLabel': 'Choisir la langue',
+            'preset.title': '💾 Presets sauvegardés',
+            'preset.save': '💾 Sauver preset',
+            'preset.empty': 'Aucun preset sauvegardé. Ajoute des noms et sauvegarde ta liste préférée !',
+            'preset.loadBtn': 'Charger',
+            'preset.deleteBtn': 'Supprimer preset',
+            'preset.modalTitle': 'Sauver preset',
+            'preset.modalSubtitle': 'Donne un nom à cette liste pour la retrouver facilement.',
+            'preset.namePlaceholder': 'Ex. Collègues bureau, Amis du bar...',
+            'preset.cancel': 'Annuler',
+            'preset.confirm': 'Sauver',
+            'preset.needNames': 'Ajoute au moins un nom avant de sauvegarder un preset !',
+            'preset.emptyName': 'Le nom du preset ne peut pas être vide !',
+            'preset.saved': 'Preset "{name}" sauvegardé !',
+            'preset.duplicateName': 'Un preset avec ce nom existe déjà. Choisis-en un autre.',
+            'preset.loaded': 'Preset "{name}" chargé !',
+            'preset.confirmDelete': 'Veux-tu vraiment supprimer le preset "{name}" ?',
+            'preset.deleted': 'Preset "{name}" supprimé.',
+            'preset.countOne': '1 nom',
+            'preset.countMany': '{n} noms',
+            'edit.tooltip': 'Cliquer pour modifier',
+            'edit.save': 'Enregistrer',
+            'edit.duplicate': 'Ce nom existe déjà !',
+            'edit.empty': 'Le nom ne peut pas être vide !'
         },
         de: {
             'lang.current': 'DE',
@@ -178,13 +278,38 @@
             'rules.5': '<strong>Die Auslosung ist zufällig</strong> und nutzt <code>crypto.getRandomValues</code> für fairere Zufälligkeit (wo verfügbar).',
             'rules.6': '<strong>Wer gezogen wird, gibt allen anderen einen Kaffee aus</strong>. Keine Ausreden! (Bei 2 Personen gibt der Verlierer dem anderen einen aus).',
             'rules.7': '<strong>Zurücksetzen</strong> leert die gesamte Liste und startet von vorne — sparsam verwenden.',
+            'rules.8': '<strong>Namen bearbeiten</strong>: Klicke auf einen Namen, um ihn umzubenennen (oder benutze den Stift). Der Name muss eindeutig und nicht leer bleiben.',
+            'rules.9': '<strong>Presets</strong>: Speichere die aktuelle Liste mit einem Namen, um sie wiederzufinden. Du kannst ein Preset jederzeit laden oder löschen.',
             'footer.text': '💡 Goldene Regel: Wer die Auslosung gewinnt, zahlt... niemals.',
             'alert.emptyName': '⚠️ Komm schon, gib einen Namen ein!',
             'alert.duplicate': '⚠️ "{name}" ist bereits in der Liste!',
             'alert.tooLong': 'Der Name darf höchstens 30 Zeichen lang sein.',
             'alert.needTwo': 'Du brauchst mindestens 2 Teilnehmer, um auszulosen, wer den Kaffee ausgibt! ☕',
             'confirm.reset': 'Willst du wirklich alles zurücksetzen? Die Liste wird geleert. 🧹',
-            'lang.menuLabel': 'Sprache auswählen'
+            'lang.menuLabel': 'Sprache auswählen',
+            'preset.title': '💾 Gespeicherte Presets',
+            'preset.save': '💾 Preset speichern',
+            'preset.empty': 'Keine Presets gespeichert. Füge Namen hinzu und speichere deine Lieblingsliste!',
+            'preset.loadBtn': 'Laden',
+            'preset.deleteBtn': 'Preset löschen',
+            'preset.modalTitle': 'Preset speichern',
+            'preset.modalSubtitle': 'Gib dieser Liste einen Namen, um sie leicht wiederzufinden.',
+            'preset.namePlaceholder': 'z.B. Bürokollegen, Barfreunde...',
+            'preset.cancel': 'Abbrechen',
+            'preset.confirm': 'Speichern',
+            'preset.needNames': 'Füge mindestens einen Namen hinzu, bevor du ein Preset speicherst!',
+            'preset.emptyName': 'Der Preset-Name darf nicht leer sein!',
+            'preset.saved': 'Preset "{name}" gespeichert!',
+            'preset.duplicateName': 'Ein Preset mit diesem Namen existiert bereits. Wähle einen anderen.',
+            'preset.loaded': 'Preset "{name}" geladen!',
+            'preset.confirmDelete': 'Willst du das Preset "{name}" wirklich löschen?',
+            'preset.deleted': 'Preset "{name}" gelöscht.',
+            'preset.countOne': '1 Name',
+            'preset.countMany': '{n} Namen',
+            'edit.tooltip': 'Klicken zum Bearbeiten',
+            'edit.save': 'Speichern',
+            'edit.duplicate': 'Dieser Name existiert bereits!',
+            'edit.empty': 'Der Name darf nicht leer sein!'
         },
         pt: {
             'lang.current': 'PT',
@@ -214,19 +339,45 @@
             'rules.5': '<strong>O sorteio é aleatório</strong> e usa <code>crypto.getRandomValues</code> para uma aleatoriedade mais justa (onde disponível).',
             'rules.6': '<strong>Quem sai paga o café a todos os outros</strong>. Sem desculpas! (Se forem 2, o perdedor paga ao outro).',
             'rules.7': '<strong>Reiniciar</strong> limpa toda a lista e recomeça do zero — usa com moderação.',
+            'rules.8': '<strong>Editar nomes</strong>: clica num nome para o renomear (ou usa o lápis). O nome deve continuar único e não vazio.',
+            'rules.9': '<strong>Presets</strong>: guarda a lista atual com um nome para a encontrares. Podes carregar ou eliminar um preset a qualquer momento.',
             'footer.text': '💡 Regra de ouro: quem ganha o sorteio não paga... nunca.',
             'alert.emptyName': '⚠️ Vá lá, escreve um nome!',
             'alert.duplicate': '⚠️ "{name}" já está na lista!',
             'alert.tooLong': 'O nome não pode exceder 30 caracteres.',
             'alert.needTwo': 'Precisas de pelo menos 2 participantes para sortear quem paga o café! ☕',
             'confirm.reset': 'Queres mesmo reiniciar tudo? A lista será limpa. 🧹',
-            'lang.menuLabel': 'Selecionar idioma'
+            'lang.menuLabel': 'Selecionar idioma',
+            'preset.title': '💾 Presets guardados',
+            'preset.save': '💾 Guardar preset',
+            'preset.empty': 'Nenhum preset guardado. Adiciona nomes e guarda a tua lista favorita!',
+            'preset.loadBtn': 'Carregar',
+            'preset.deleteBtn': 'Eliminar preset',
+            'preset.modalTitle': 'Guardar preset',
+            'preset.modalSubtitle': 'Dá um nome a esta lista para a encontrares facilmente.',
+            'preset.namePlaceholder': 'Ex. Colegas de escritório, Amigos do bar...',
+            'preset.cancel': 'Cancelar',
+            'preset.confirm': 'Guardar',
+            'preset.needNames': 'Adiciona pelo menos um nome antes de guardar um preset!',
+            'preset.emptyName': 'O nome do preset não pode estar vazio!',
+            'preset.saved': 'Preset "{name}" guardado!',
+            'preset.duplicateName': 'Já existe um preset com este nome. Escolhe outro.',
+            'preset.loaded': 'Preset "{name}" carregado!',
+            'preset.confirmDelete': 'Queres mesmo eliminar o preset "{name}"?',
+            'preset.deleted': 'Preset "{name}" eliminado.',
+            'preset.countOne': '1 nome',
+            'preset.countMany': '{n} nomes',
+            'edit.tooltip': 'Clica para editar',
+            'edit.save': 'Guardar',
+            'edit.duplicate': 'Este nome já existe!',
+            'edit.empty': 'O nome não pode estar vazio!'
         }
     };
 
     const RTL_LANGS = [];
     const SUPPORTED_LANGS = Object.keys(translations);
     const LANG_FLAGS = { it: '🇮🇹', en: '🇬🇧', es: '🇪🇸', fr: '🇫🇷', de: '🇩🇪', pt: '🇵🇹' };
+    const PRESET_STORAGE_KEY = 'coffeePresets';
 
     // ==================================================================
     // STATO
@@ -234,6 +385,8 @@
     let partecipanti = [];
     let currentLang = 'it';
     let lastResult = null;
+    let presets = []; // { id, name, names: string[] }
+    let editingIndex = -1;
 
     // ==================================================================
     // RIFERIMENTI DOM
@@ -254,14 +407,25 @@
     const container = document.querySelector('.container');
     const regoleList = document.getElementById('regoleList');
 
+    const presetList = document.getElementById('presetList');
+    const presetEmpty = document.getElementById('presetEmpty');
+    const salvaPresetBtn = document.getElementById('salvaPresetBtn');
+
+    const modalOverlay = document.getElementById('modalOverlay');
+    const presetNameInput = document.getElementById('presetNameInput');
+    const modalCancelBtn = document.getElementById('modalCancelBtn');
+    const modalSaveBtn = document.getElementById('modalSaveBtn');
+
     const langToggle = document.getElementById('langToggle');
     const langMenu = document.getElementById('langMenu');
     const langCurrentFlag = langToggle.querySelector('.flag');
     const langCurrentCode = langToggle.querySelector('.lang-code');
     const langOptions = document.querySelectorAll('.lang-option');
 
+    let modalResolve = null;
+
     // ==================================================================
-    // TEMA / DARK MODE (automatico via CSS, aggiorniamo solo il meta)
+    // TEMA / DARK MODE
     // ==================================================================
     function updateThemeColor() {
         const isDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
@@ -302,8 +466,7 @@
 
     function applyTranslations() {
         document.querySelectorAll('[data-i18n]').forEach(function (el) {
-            const key = el.getAttribute('data-i18n');
-            el.innerHTML = t(key);
+            el.innerHTML = t(el.getAttribute('data-i18n'));
         });
         document.querySelectorAll('[data-i18n-placeholder]').forEach(function (el) {
             el.setAttribute('placeholder', t(el.getAttribute('data-i18n-placeholder')));
@@ -313,7 +476,7 @@
 
         if (regoleList) {
             regoleList.innerHTML = '';
-            for (let i = 1; i <= 7; i++) {
+            for (let i = 1; i <= 9; i++) {
                 const li = document.createElement('li');
                 li.innerHTML = t('rules.' + i);
                 regoleList.appendChild(li);
@@ -321,10 +484,8 @@
         }
 
         aggiornaContatore();
-
-        if (lastResult) {
-            renderRisultato();
-        }
+        renderPresets();
+        if (lastResult) renderRisultato();
 
         langCurrentFlag.textContent = LANG_FLAGS[currentLang] || '🌐';
         langCurrentCode.textContent = t('lang.current');
@@ -332,15 +493,16 @@
         langMenu.setAttribute('aria-label', t('lang.menuLabel'));
 
         langOptions.forEach(function (btn) {
-            if (btn.getAttribute('data-lang') === currentLang) {
-                btn.classList.add('active');
-            } else {
-                btn.classList.remove('active');
-            }
+            btn.classList.toggle('active', btn.getAttribute('data-lang') === currentLang);
         });
 
         html.setAttribute('lang', currentLang);
         html.setAttribute('dir', RTL_LANGS.indexOf(currentLang) !== -1 ? 'rtl' : 'ltr');
+
+        // Aggiorna editing eventualmente aperto
+        if (editingIndex >= 0 && editingIndex < partecipanti.length) {
+            renderListaConEditing();
+        }
     }
 
     function aggiornaContatore() {
@@ -363,19 +525,15 @@
     }
 
     // ==================================================================
-    // RILEVAMENTO LINGUA
+    // LINGUA
     // ==================================================================
     function detectLanguage() {
         const candidates = [];
-        if (navigator.languages && navigator.languages.length) {
-            candidates.push.apply(candidates, navigator.languages);
-        }
+        if (navigator.languages && navigator.languages.length) candidates.push.apply(candidates, navigator.languages);
         if (navigator.language) candidates.push(navigator.language);
         if (navigator.userLanguage) candidates.push(navigator.userLanguage);
-
         for (let i = 0; i < candidates.length; i++) {
-            const code = String(candidates[i]).toLowerCase();
-            const base = code.split('-')[0];
+            const base = String(candidates[i]).toLowerCase().split('-')[0];
             if (SUPPORTED_LANGS.indexOf(base) !== -1) return base;
         }
         return 'it';
@@ -399,22 +557,283 @@
     }
 
     // ==================================================================
-    // UI LISTA PARTECIPANTI
+    // PRESET — persistenza
     // ==================================================================
-    function aggiornaInterfaccia() {
+    function loadPresetsFromStorage() {
+        try {
+            const raw = localStorage.getItem(PRESET_STORAGE_KEY);
+            if (raw) {
+                const parsed = JSON.parse(raw);
+                if (Array.isArray(parsed)) {
+                    presets = parsed.filter(function (p) {
+                        return p && typeof p.id === 'string' && typeof p.name === 'string' && Array.isArray(p.names);
+                    });
+                    return;
+                }
+            }
+        } catch (e) {}
+        presets = [];
+    }
+
+    function savePresetsToStorage() {
+        try {
+            localStorage.setItem(PRESET_STORAGE_KEY, JSON.stringify(presets));
+        } catch (e) {}
+    }
+
+    function genId() {
+        return 'p_' + Date.now().toString(36) + '_' + Math.random().toString(36).slice(2, 7);
+    }
+
+    function renderPresets() {
+        presetList.innerHTML = '';
+
+        if (presets.length === 0) {
+            presetEmpty.style.display = 'block';
+            return;
+        }
+        presetEmpty.style.display = 'none';
+
+        presets.forEach(function (preset) {
+            const item = document.createElement('div');
+            item.className = 'preset-item';
+            item.setAttribute('data-id', preset.id);
+
+            const info = document.createElement('div');
+            info.className = 'preset-item-info';
+
+            const nameEl = document.createElement('div');
+            nameEl.className = 'preset-item-name';
+            nameEl.textContent = preset.name;
+            nameEl.title = preset.name;
+
+            const countEl = document.createElement('div');
+            countEl.className = 'preset-item-count';
+            countEl.textContent = preset.names.length === 1
+                ? t('preset.countOne')
+                : t('preset.countMany', { n: preset.names.length });
+
+            info.appendChild(nameEl);
+            info.appendChild(countEl);
+
+            const actions = document.createElement('div');
+            actions.className = 'preset-item-actions';
+
+            const loadBtn = document.createElement('button');
+            loadBtn.className = 'preset-action-btn';
+            loadBtn.type = 'button';
+            loadBtn.textContent = '📥 ' + t('preset.loadBtn');
+            loadBtn.addEventListener('click', function () {
+                caricaPreset(preset.id);
+            });
+
+            const delBtn = document.createElement('button');
+            delBtn.className = 'preset-icon-btn';
+            delBtn.type = 'button';
+            delBtn.innerHTML = '✕';
+            delBtn.setAttribute('aria-label', t('preset.deleteBtn'));
+            delBtn.title = t('preset.deleteBtn');
+            delBtn.addEventListener('click', function () {
+                eliminaPreset(preset.id);
+            });
+
+            actions.appendChild(loadBtn);
+            actions.appendChild(delBtn);
+
+            item.appendChild(info);
+            item.appendChild(actions);
+            presetList.appendChild(item);
+        });
+    }
+
+    function caricaPreset(id) {
+        const preset = presets.find(function (p) { return p.id === id; });
+        if (!preset) return;
+
+        partecipanti = preset.names.slice();
+        editingIndex = -1;
+        aggiornaInterfaccia();
+        risultatoBox.style.display = 'none';
+        lastResult = null;
+
+        // scroll alla lista
+        listaPartecipanti.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+    }
+
+    function eliminaPreset(id) {
+        const preset = presets.find(function (p) { return p.id === id; });
+        if (!preset) return;
+        if (!confirm(t('preset.confirmDelete', { name: preset.name }))) return;
+
+        presets = presets.filter(function (p) { return p.id !== id; });
+        savePresetsToStorage();
+        renderPresets();
+    }
+
+    function salvaPreset() {
+        if (partecipanti.length === 0) {
+            alert(t('preset.needNames'));
+            return;
+        }
+        apriModalPreset().then(function (nomePreset) {
+            if (nomePreset === null) return; // annullato
+
+            // Controllo duplicato
+            const exists = presets.some(function (p) {
+                return p.name.toLowerCase() === nomePreset.toLowerCase();
+            });
+            if (exists) {
+                alert(t('preset.duplicateName'));
+                return;
+            }
+
+            presets.push({
+                id: genId(),
+                name: nomePreset,
+                names: partecipanti.slice()
+            });
+            savePresetsToStorage();
+            renderPresets();
+        });
+    }
+
+    // ==================================================================
+    // MODAL
+    // ==================================================================
+    function apriModalPreset() {
+        return new Promise(function (resolve) {
+            modalResolve = resolve;
+            presetNameInput.value = '';
+            modalOverlay.hidden = false;
+            setTimeout(function () { presetNameInput.focus(); }, 50);
+        });
+    }
+
+    function chiudiModal(valore) {
+        modalOverlay.hidden = true;
+        if (modalResolve) {
+            const r = modalResolve;
+            modalResolve = null;
+            r(valore);
+        }
+    }
+
+    modalCancelBtn.addEventListener('click', function () { chiudiModal(null); });
+    modalSaveBtn.addEventListener('click', function () {
+        const nome = presetNameInput.value.trim();
+        if (nome === '') {
+            alert(t('preset.emptyName'));
+            presetNameInput.focus();
+            return;
+        }
+        chiudiModal(nome);
+    });
+
+    modalOverlay.addEventListener('click', function (e) {
+        if (e.target === modalOverlay) chiudiModal(null);
+    });
+
+    presetNameInput.addEventListener('keypress', function (e) {
+        if (e.key === 'Enter') {
+            e.preventDefault();
+            modalSaveBtn.click();
+        }
+    });
+
+    document.addEventListener('keydown', function (e) {
+        if (e.key === 'Escape' && !modalOverlay.hidden) {
+            chiudiModal(null);
+        }
+    });
+
+    // ==================================================================
+    // LISTA PARTECIPANTI
+    // ==================================================================
+    function renderListaConEditing() {
         listaPartecipanti.innerHTML = '';
 
         if (partecipanti.length === 0) {
             emptyMessage.style.display = 'block';
-        } else {
-            emptyMessage.style.display = 'none';
-            partecipanti.forEach(function (nome, index) {
-                const li = document.createElement('li');
-                li.className = 'partecipante';
-                li.setAttribute('data-index', index);
+            return;
+        }
+        emptyMessage.style.display = 'none';
 
+        partecipanti.forEach(function (nome, index) {
+            const li = document.createElement('li');
+            li.className = 'partecipante';
+            li.setAttribute('data-index', index);
+
+            if (index === editingIndex) {
+                // Modalità editing
+                li.classList.add('editing');
+
+                const input = document.createElement('input');
+                input.type = 'text';
+                input.className = 'edit-input';
+                input.value = nome;
+                input.maxLength = 30;
+                input.setAttribute('aria-label', 'Modifica nome');
+
+                const saveBtn = document.createElement('button');
+                saveBtn.className = 'edit-btn';
+                saveBtn.type = 'button';
+                saveBtn.innerHTML = '✓';
+                saveBtn.setAttribute('aria-label', t('edit.save'));
+                saveBtn.title = t('edit.save');
+                saveBtn.addEventListener('click', function () {
+                    confermaModifica(index, input.value);
+                });
+
+                const cancelBtn = document.createElement('button');
+                cancelBtn.className = 'rimuovi';
+                cancelBtn.type = 'button';
+                cancelBtn.innerHTML = '✕';
+                cancelBtn.setAttribute('aria-label', 'Annulla modifica');
+                cancelBtn.addEventListener('click', function () {
+                    editingIndex = -1;
+                    renderListaConEditing();
+                });
+
+                input.addEventListener('keypress', function (e) {
+                    if (e.key === 'Enter') {
+                        e.preventDefault();
+                        confermaModifica(index, input.value);
+                    } else if (e.key === 'Escape') {
+                        editingIndex = -1;
+                        renderListaConEditing();
+                    }
+                });
+
+                li.appendChild(input);
+                li.appendChild(saveBtn);
+                li.appendChild(cancelBtn);
+                listaPartecipanti.appendChild(li);
+
+                setTimeout(function () {
+                    input.focus();
+                    input.select();
+                }, 30);
+            } else {
                 const spanNome = document.createElement('span');
+                spanNome.className = 'nome-testo';
                 spanNome.textContent = nome;
+                spanNome.title = t('edit.tooltip');
+                spanNome.addEventListener('click', function () {
+                    editingIndex = index;
+                    renderListaConEditing();
+                });
+
+                const editBtn = document.createElement('button');
+                editBtn.className = 'edit-btn';
+                editBtn.type = 'button';
+                editBtn.innerHTML = '✎';
+                editBtn.setAttribute('aria-label', t('edit.tooltip'));
+                editBtn.title = t('edit.tooltip');
+                editBtn.addEventListener('click', function (e) {
+                    e.stopPropagation();
+                    editingIndex = index;
+                    renderListaConEditing();
+                });
 
                 const btnRimuovi = document.createElement('button');
                 btnRimuovi.className = 'rimuovi';
@@ -427,14 +846,41 @@
                 });
 
                 li.appendChild(spanNome);
+                li.appendChild(editBtn);
                 li.appendChild(btnRimuovi);
                 listaPartecipanti.appendChild(li);
-            });
-        }
+            }
+        });
+    }
 
+    function confermaModifica(index, nuovoNomeRaw) {
+        const nuovoNome = nuovoNomeRaw.trim();
+        if (nuovoNome === '') {
+            alert(t('edit.empty'));
+            return;
+        }
+        if (nuovoNome.length > 30) {
+            alert(t('alert.tooLong'));
+            return;
+        }
+        const duplicato = partecipanti.some(function (p, i) {
+            return i !== index && p.toLowerCase() === nuovoNome.toLowerCase();
+        });
+        if (duplicato) {
+            alert(t('edit.duplicate'));
+            return;
+        }
+        partecipanti[index] = nuovoNome;
+        editingIndex = -1;
+        aggiornaInterfaccia();
+        risultatoBox.style.display = 'none';
+        lastResult = null;
+    }
+
+    function aggiornaInterfaccia() {
+        renderListaConEditing();
         aggiornaContatore();
         sorteggiaBtn.disabled = partecipanti.length < 2;
-
         if (partecipanti.length === 0) {
             risultatoBox.style.display = 'none';
             lastResult = null;
@@ -445,14 +891,15 @@
     // AZIONI
     // ==================================================================
     function aggiungiPartecipante() {
+        if (editingIndex >= 0) {
+            editingIndex = -1;
+        }
         const nome = nomeInput.value.trim();
 
         if (nome === '') {
             nomeInput.focus();
             nomeInput.placeholder = t('alert.emptyName');
-            setTimeout(function () {
-                nomeInput.placeholder = t('input.placeholder');
-            }, 1500);
+            setTimeout(function () { nomeInput.placeholder = t('input.placeholder'); }, 1500);
             return;
         }
 
@@ -469,9 +916,7 @@
             nomeInput.value = '';
             nomeInput.placeholder = t('alert.duplicate', { name: nome });
             nomeInput.focus();
-            setTimeout(function () {
-                nomeInput.placeholder = t('input.placeholder');
-            }, 1800);
+            setTimeout(function () { nomeInput.placeholder = t('input.placeholder'); }, 1800);
             return;
         }
 
@@ -487,6 +932,8 @@
     function rimuoviPartecipante(index) {
         if (index >= 0 && index < partecipanti.length) {
             partecipanti.splice(index, 1);
+            if (editingIndex === index) editingIndex = -1;
+            else if (editingIndex > index) editingIndex--;
             aggiornaInterfaccia();
             risultatoBox.style.display = 'none';
             lastResult = null;
@@ -494,10 +941,9 @@
     }
 
     function resetTutto() {
-        if (partecipanti.length > 0 && !confirm(t('confirm.reset'))) {
-            return;
-        }
+        if (partecipanti.length > 0 && !confirm(t('confirm.reset'))) return;
         partecipanti = [];
+        editingIndex = -1;
         nomeInput.value = '';
         aggiornaInterfaccia();
         risultatoBox.style.display = 'none';
@@ -517,13 +963,11 @@
             const p = document.createElement('span');
             p.className = 'particella';
             p.textContent = emoji || emojis[Math.floor(Math.random() * emojis.length)];
-
             p.style.left = (scenaRect.left - contRect.left + scenaRect.width / 2 - 20) + 'px';
             p.style.top = (scenaRect.top - contRect.top + scenaRect.height / 2 - 20) + 'px';
 
             const angle = Math.random() * Math.PI * 2;
             const dist = 80 + Math.random() * 120;
-
             p.style.setProperty('--tx', (Math.cos(angle) * dist) + 'px');
             p.style.setProperty('--ty', (Math.sin(angle) * dist - 40) + 'px');
             p.style.setProperty('--rot', (Math.random() * 720 - 360) + 'deg');
@@ -538,7 +982,6 @@
         const colors = ['#ff8c42', '#ffd166', '#06d6a0', '#ef476f', '#118ab2', '#b48c63', '#ff9d5c'];
         const contRect = container.getBoundingClientRect();
         const scenaRect = tazzaScena.getBoundingClientRect();
-
         const centerX = scenaRect.left - contRect.left + scenaRect.width / 2;
         const centerY = scenaRect.top - contRect.top + scenaRect.height / 2;
 
@@ -554,7 +997,6 @@
 
             const angle = Math.random() * Math.PI * 2;
             const dist = 100 + Math.random() * 220;
-
             c.style.setProperty('--cx', (Math.cos(angle) * dist) + 'px');
             c.style.setProperty('--cy', (Math.sin(angle) * dist + 100) + 'px');
             c.style.setProperty('--cr', (Math.random() * 900 - 450) + 'deg');
@@ -586,6 +1028,11 @@
         if (partecipanti.length < 2) {
             alert(t('alert.needTwo'));
             return;
+        }
+
+        if (editingIndex >= 0) {
+            editingIndex = -1;
+            renderListaConEditing();
         }
 
         sorteggiaBtn.disabled = true;
@@ -626,18 +1073,16 @@
     }
 
     // ==================================================================
-    // SELETTORE LINGUA UI
+    // LINGUA UI
     // ==================================================================
     function openLangMenu() {
         langMenu.classList.add('open');
         langToggle.setAttribute('aria-expanded', 'true');
     }
-
     function closeLangMenu() {
         langMenu.classList.remove('open');
         langToggle.setAttribute('aria-expanded', 'false');
     }
-
     function toggleLangMenu() {
         if (langMenu.classList.contains('open')) closeLangMenu();
         else openLangMenu();
@@ -647,21 +1092,18 @@
         e.stopPropagation();
         toggleLangMenu();
     });
-
     document.addEventListener('click', function (e) {
         if (!langMenu.contains(e.target) && !langToggle.contains(e.target)) {
             closeLangMenu();
         }
     });
-
     document.addEventListener('keydown', function (e) {
         if (e.key === 'Escape') closeLangMenu();
     });
 
     langOptions.forEach(function (btn) {
         btn.addEventListener('click', function () {
-            const lang = btn.getAttribute('data-lang');
-            setLanguage(lang, true);
+            setLanguage(btn.getAttribute('data-lang'), true);
             closeLangMenu();
         });
     });
@@ -670,23 +1112,25 @@
     // EVENT LISTENER AZIONI
     // ==================================================================
     addBtn.addEventListener('click', aggiungiPartecipante);
-
     nomeInput.addEventListener('keypress', function (e) {
         if (e.key === 'Enter') {
             e.preventDefault();
             aggiungiPartecipante();
         }
     });
-
     sorteggiaBtn.addEventListener('click', sorteggia);
     resetBtn.addEventListener('click', resetTutto);
+    salvaPresetBtn.addEventListener('click', salvaPreset);
 
     // ==================================================================
     // AVVIO
     // ==================================================================
+    loadPresetsFromStorage();
+
     const savedLang = getSavedLanguage();
     const initialLang = savedLang || detectLanguage();
     setLanguage(initialLang, !!savedLang);
 
     aggiornaInterfaccia();
+    renderPresets();
 })();

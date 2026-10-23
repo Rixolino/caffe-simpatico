@@ -72,6 +72,22 @@
         </div>
     </div>
 
+    <!-- Preset salvati -->
+    <div class="preset-panel">
+        <div class="preset-header">
+            <h3><span data-i18n="preset.title">💾 Preset salvati</span></h3>
+            <button class="btn btn-small btn-preset" id="salvaPresetBtn" data-i18n="preset.save" title="Salva la lista attuale come preset">
+                💾 Salva preset
+            </button>
+        </div>
+        <div class="preset-list" id="presetList">
+            <!-- popolato via js -->
+        </div>
+        <div class="preset-empty" id="presetEmpty" data-i18n="preset.empty">
+            Nessun preset salvato. Aggiungi nomi e salva la tua lista preferita!
+        </div>
+    </div>
+
     <!-- Input per aggiungere nome -->
     <div class="input-group">
         <div class="input-wrapper">
@@ -114,6 +130,19 @@
     <div class="footer-nota">
         <span data-i18n="footer.text">💡 Regola d'oro: chi vince il sorteggio non paga... mai.</span>
         <span class="cuore">❤</span>
+    </div>
+</div>
+
+<!-- Modal per salvare preset -->
+<div class="modal-overlay" id="modalOverlay" hidden>
+    <div class="modal" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+        <h3 id="modalTitle" data-i18n="preset.modalTitle">Salva preset</h3>
+        <p class="modal-subtitle" data-i18n="preset.modalSubtitle">Dai un nome a questa lista per ritrovarla facilmente.</p>
+        <input type="text" id="presetNameInput" class="modal-input" maxlength="40" autocomplete="off" data-i18n-placeholder="preset.namePlaceholder" placeholder="Es. Colleghi ufficio, Amici del bar...">
+        <div class="modal-actions">
+            <button class="btn btn-secondary" id="modalCancelBtn" data-i18n="preset.cancel">Annulla</button>
+            <button class="btn" id="modalSaveBtn" data-i18n="preset.confirm">Salva</button>
+        </div>
     </div>
 </div>
 
