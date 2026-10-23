@@ -35,7 +35,7 @@
             'rules.6': '<strong>Chi esce paga il caffè a tutti gli altri</strong>. Nessuna scusa! (Se siete in 2, il perdente offre all\'altro).',
             'rules.7': '<strong>Reset</strong> pulisce tutta la lista e ricomincia da zero — usalo con parsimonia.',
             'rules.8': '<strong>Modifica nomi</strong>: clicca sul nome per rinominarlo (o usa la matitina). Il nome deve restare unico e non vuoto.',
-            'rules.9': '<strong>Preset</strong>: salva la lista attuale con un nome per ritrovarla. Puoi caricare o eliminare un preset in qualsiasi momento.',
+            'rules.9': '<strong>Preset</strong>: salva la lista attuale con un nome per ritrovarla. Puoi caricare, aggiornare o eliminare un preset in qualsiasi momento.',
             'footer.text': '💡 Regola d\'oro: chi vince il sorteggio non paga... mai.',
             'alert.emptyName': '⚠️ Dai, scrivi un nome!',
             'alert.duplicate': '⚠️ "{name}" c\'è già!',
@@ -47,7 +47,10 @@
             'preset.save': '💾 Salva preset',
             'preset.empty': 'Nessun preset salvato. Aggiungi nomi e salva la tua lista preferita!',
             'preset.loadBtn': 'Carica',
+            'preset.updateBtn': 'Aggiorna',
+            'preset.updateTitle': 'Sovrascrive questo preset con la lista attuale',
             'preset.deleteBtn': 'Elimina preset',
+            'preset.active': 'Attivo',
             'preset.modalTitle': 'Salva preset',
             'preset.modalSubtitle': 'Dai un nome a questa lista per ritrovarla facilmente.',
             'preset.namePlaceholder': 'Es. Colleghi ufficio, Amici del bar...',
@@ -56,9 +59,15 @@
             'preset.needNames': 'Aggiungi almeno un nome prima di salvare un preset!',
             'preset.emptyName': 'Il nome del preset non può essere vuoto!',
             'preset.saved': 'Preset "{name}" salvato!',
-            'preset.duplicateName': 'Esiste già un preset con questo nome. Scegline un altro.',
+            'preset.duplicateWarning': '⚠️ Esiste già un preset con questo nome. Confermando lo sovrascriverai.',
+            'preset.overwriteTitle': 'Sovrascrivere il preset?',
+            'preset.overwriteMessage': 'Esiste già un preset con questo nome. Vuoi sovrascriverlo con la lista attuale?',
+            'preset.overwrite': 'Sovrascrivi',
+            'preset.overwritten': 'Preset "{name}" sovrascritto!',
             'preset.loaded': 'Preset "{name}" caricato!',
             'preset.confirmDelete': 'Vuoi davvero eliminare il preset "{name}"?',
+            'preset.confirmUpdate': 'Vuoi sovrascrivere il preset "{name}" con la lista attuale?',
+            'preset.updated': 'Preset "{name}" aggiornato!',
             'preset.deleted': 'Preset "{name}" eliminato.',
             'preset.countOne': '1 nome',
             'preset.countMany': '{n} nomi',
@@ -96,7 +105,7 @@
             'rules.6': '<strong>Whoever is picked buys coffee for everyone else</strong>. No excuses! (If there are 2 of you, the loser buys for the other).',
             'rules.7': '<strong>Reset</strong> clears the whole list and starts from scratch — use sparingly.',
             'rules.8': '<strong>Edit names</strong>: click on a name to rename it (or use the pencil). The name must stay unique and non-empty.',
-            'rules.9': '<strong>Presets</strong>: save the current list with a name to find it again. You can load or delete a preset at any time.',
+            'rules.9': '<strong>Presets</strong>: save the current list with a name to find it again. You can load, update or delete a preset at any time.',
             'footer.text': '💡 Golden rule: whoever wins the draw never pays... ever.',
             'alert.emptyName': '⚠️ Come on, type a name!',
             'alert.duplicate': '⚠️ "{name}" is already in the list!',
@@ -108,7 +117,10 @@
             'preset.save': '💾 Save preset',
             'preset.empty': 'No presets saved. Add names and save your favorite list!',
             'preset.loadBtn': 'Load',
+            'preset.updateBtn': 'Update',
+            'preset.updateTitle': 'Overwrite this preset with the current list',
             'preset.deleteBtn': 'Delete preset',
+            'preset.active': 'Active',
             'preset.modalTitle': 'Save preset',
             'preset.modalSubtitle': 'Give this list a name to find it easily.',
             'preset.namePlaceholder': 'e.g. Office colleagues, Bar friends...',
@@ -117,9 +129,15 @@
             'preset.needNames': 'Add at least one name before saving a preset!',
             'preset.emptyName': 'Preset name cannot be empty!',
             'preset.saved': 'Preset "{name}" saved!',
-            'preset.duplicateName': 'A preset with this name already exists. Choose another.',
+            'preset.duplicateWarning': '⚠️ A preset with this name already exists. Confirming will overwrite it.',
+            'preset.overwriteTitle': 'Overwrite preset?',
+            'preset.overwriteMessage': 'A preset with this name already exists. Do you want to overwrite it with the current list?',
+            'preset.overwrite': 'Overwrite',
+            'preset.overwritten': 'Preset "{name}" overwritten!',
             'preset.loaded': 'Preset "{name}" loaded!',
             'preset.confirmDelete': 'Do you really want to delete the preset "{name}"?',
+            'preset.confirmUpdate': 'Do you want to overwrite the preset "{name}" with the current list?',
+            'preset.updated': 'Preset "{name}" updated!',
             'preset.deleted': 'Preset "{name}" deleted.',
             'preset.countOne': '1 name',
             'preset.countMany': '{n} names',
@@ -157,7 +175,7 @@
             'rules.6': '<strong>Quien sale paga el café a todos los demás</strong>. ¡Sin excusas! (Si sois 2, el perdedor invita al otro).',
             'rules.7': '<strong>Reiniciar</strong> limpia toda la lista y empieza de cero — úsalo con moderación.',
             'rules.8': '<strong>Editar nombres</strong>: haz clic en un nombre para renombrarlo (o usa el lápiz). El nombre debe seguir siendo único y no vacío.',
-            'rules.9': '<strong>Presets</strong>: guarda la lista actual con un nombre para encontrarla. Puedes cargar o eliminar un preset en cualquier momento.',
+            'rules.9': '<strong>Presets</strong>: guarda la lista actual con un nombre para encontrarla. Puedes cargar, actualizar o eliminar un preset en cualquier momento.',
             'footer.text': '💡 Regla de oro: quien gana el sorteo no paga... nunca.',
             'alert.emptyName': '⚠️ ¡Vamos, escribe un nombre!',
             'alert.duplicate': '⚠️ ¡"{name}" ya está en la lista!',
@@ -169,7 +187,10 @@
             'preset.save': '💾 Guardar preset',
             'preset.empty': 'Ningún preset guardado. ¡Añade nombres y guarda tu lista favorita!',
             'preset.loadBtn': 'Cargar',
+            'preset.updateBtn': 'Actualizar',
+            'preset.updateTitle': 'Sobrescribe este preset con la lista actual',
             'preset.deleteBtn': 'Eliminar preset',
+            'preset.active': 'Activo',
             'preset.modalTitle': 'Guardar preset',
             'preset.modalSubtitle': 'Dale un nombre a esta lista para encontrarla fácilmente.',
             'preset.namePlaceholder': 'Ej. Compañeros de oficina, Amigos del bar...',
@@ -178,9 +199,15 @@
             'preset.needNames': '¡Añade al menos un nombre antes de guardar un preset!',
             'preset.emptyName': '¡El nombre del preset no puede estar vacío!',
             'preset.saved': '¡Preset "{name}" guardado!',
-            'preset.duplicateName': 'Ya existe un preset con este nombre. Elige otro.',
+            'preset.duplicateWarning': '⚠️ Ya existe un preset con este nombre. Al confirmar lo sobrescribirás.',
+            'preset.overwriteTitle': '¿Sobrescribir el preset?',
+            'preset.overwriteMessage': 'Ya existe un preset con este nombre. ¿Quieres sobrescribirlo con la lista actual?',
+            'preset.overwrite': 'Sobrescribir',
+            'preset.overwritten': '¡Preset "{name}" sobrescrito!',
             'preset.loaded': '¡Preset "{name}" cargado!',
             'preset.confirmDelete': '¿Seguro que quieres eliminar el preset "{name}"?',
+            'preset.confirmUpdate': '¿Quieres sobrescribir el preset "{name}" con la lista actual?',
+            'preset.updated': '¡Preset "{name}" actualizado!',
             'preset.deleted': 'Preset "{name}" eliminado.',
             'preset.countOne': '1 nombre',
             'preset.countMany': '{n} nombres',
@@ -218,7 +245,7 @@
             'rules.6': '<strong>Celui qui sort paie le café à tous les autres</strong>. Aucune excuse ! (Si vous êtes 2, le perdant offre à l\'autre).',
             'rules.7': '<strong>Réinitialiser</strong> vide toute la liste et recommence de zéro — à utiliser avec parcimonie.',
             'rules.8': '<strong>Modifier les noms</strong> : clique sur un nom pour le renommer (ou utilise le crayon). Le nom doit rester unique et non vide.',
-            'rules.9': '<strong>Presets</strong> : sauvegarde la liste actuelle avec un nom pour la retrouver. Tu peux charger ou supprimer un preset à tout moment.',
+            'rules.9': '<strong>Presets</strong> : sauvegarde la liste actuelle avec un nom pour la retrouver. Tu peux charger, mettre à jour ou supprimer un preset à tout moment.',
             'footer.text': '💡 Règle d\'or : celui qui gagne le tirage ne paie... jamais.',
             'alert.emptyName': '⚠️ Allez, écris un nom !',
             'alert.duplicate': '⚠️ "{name}" est déjà dans la liste !',
@@ -230,7 +257,10 @@
             'preset.save': '💾 Sauver preset',
             'preset.empty': 'Aucun preset sauvegardé. Ajoute des noms et sauvegarde ta liste préférée !',
             'preset.loadBtn': 'Charger',
+            'preset.updateBtn': 'Mettre à jour',
+            'preset.updateTitle': 'Écrase ce preset avec la liste actuelle',
             'preset.deleteBtn': 'Supprimer preset',
+            'preset.active': 'Actif',
             'preset.modalTitle': 'Sauver preset',
             'preset.modalSubtitle': 'Donne un nom à cette liste pour la retrouver facilement.',
             'preset.namePlaceholder': 'Ex. Collègues bureau, Amis du bar...',
@@ -239,9 +269,15 @@
             'preset.needNames': 'Ajoute au moins un nom avant de sauvegarder un preset !',
             'preset.emptyName': 'Le nom du preset ne peut pas être vide !',
             'preset.saved': 'Preset "{name}" sauvegardé !',
-            'preset.duplicateName': 'Un preset avec ce nom existe déjà. Choisis-en un autre.',
+            'preset.duplicateWarning': '⚠️ Un preset avec ce nom existe déjà. En confirmant tu l\'écraseras.',
+            'preset.overwriteTitle': 'Écraser le preset ?',
+            'preset.overwriteMessage': 'Un preset avec ce nom existe déjà. Veux-tu l\'écraser avec la liste actuelle ?',
+            'preset.overwrite': 'Écraser',
+            'preset.overwritten': 'Preset "{name}" écrasé !',
             'preset.loaded': 'Preset "{name}" chargé !',
             'preset.confirmDelete': 'Veux-tu vraiment supprimer le preset "{name}" ?',
+            'preset.confirmUpdate': 'Veux-tu écraser le preset "{name}" avec la liste actuelle ?',
+            'preset.updated': 'Preset "{name}" mis à jour !',
             'preset.deleted': 'Preset "{name}" supprimé.',
             'preset.countOne': '1 nom',
             'preset.countMany': '{n} noms',
@@ -279,7 +315,7 @@
             'rules.6': '<strong>Wer gezogen wird, gibt allen anderen einen Kaffee aus</strong>. Keine Ausreden! (Bei 2 Personen gibt der Verlierer dem anderen einen aus).',
             'rules.7': '<strong>Zurücksetzen</strong> leert die gesamte Liste und startet von vorne — sparsam verwenden.',
             'rules.8': '<strong>Namen bearbeiten</strong>: Klicke auf einen Namen, um ihn umzubenennen (oder benutze den Stift). Der Name muss eindeutig und nicht leer bleiben.',
-            'rules.9': '<strong>Presets</strong>: Speichere die aktuelle Liste mit einem Namen, um sie wiederzufinden. Du kannst ein Preset jederzeit laden oder löschen.',
+            'rules.9': '<strong>Presets</strong>: Speichere die aktuelle Liste mit einem Namen, um sie wiederzufinden. Du kannst ein Preset jederzeit laden, aktualisieren oder löschen.',
             'footer.text': '💡 Goldene Regel: Wer die Auslosung gewinnt, zahlt... niemals.',
             'alert.emptyName': '⚠️ Komm schon, gib einen Namen ein!',
             'alert.duplicate': '⚠️ "{name}" ist bereits in der Liste!',
@@ -291,7 +327,10 @@
             'preset.save': '💾 Preset speichern',
             'preset.empty': 'Keine Presets gespeichert. Füge Namen hinzu und speichere deine Lieblingsliste!',
             'preset.loadBtn': 'Laden',
+            'preset.updateBtn': 'Aktualisieren',
+            'preset.updateTitle': 'Überschreibt dieses Preset mit der aktuellen Liste',
             'preset.deleteBtn': 'Preset löschen',
+            'preset.active': 'Aktiv',
             'preset.modalTitle': 'Preset speichern',
             'preset.modalSubtitle': 'Gib dieser Liste einen Namen, um sie leicht wiederzufinden.',
             'preset.namePlaceholder': 'z.B. Bürokollegen, Barfreunde...',
@@ -300,9 +339,15 @@
             'preset.needNames': 'Füge mindestens einen Namen hinzu, bevor du ein Preset speicherst!',
             'preset.emptyName': 'Der Preset-Name darf nicht leer sein!',
             'preset.saved': 'Preset "{name}" gespeichert!',
-            'preset.duplicateName': 'Ein Preset mit diesem Namen existiert bereits. Wähle einen anderen.',
+            'preset.duplicateWarning': '⚠️ Ein Preset mit diesem Namen existiert bereits. Beim Bestätigen wird es überschrieben.',
+            'preset.overwriteTitle': 'Preset überschreiben?',
+            'preset.overwriteMessage': 'Ein Preset mit diesem Namen existiert bereits. Willst du es mit der aktuellen Liste überschreiben?',
+            'preset.overwrite': 'Überschreiben',
+            'preset.overwritten': 'Preset "{name}" überschrieben!',
             'preset.loaded': 'Preset "{name}" geladen!',
             'preset.confirmDelete': 'Willst du das Preset "{name}" wirklich löschen?',
+            'preset.confirmUpdate': 'Willst du das Preset "{name}" mit der aktuellen Liste überschreiben?',
+            'preset.updated': 'Preset "{name}" aktualisiert!',
             'preset.deleted': 'Preset "{name}" gelöscht.',
             'preset.countOne': '1 Name',
             'preset.countMany': '{n} Namen',
@@ -340,7 +385,7 @@
             'rules.6': '<strong>Quem sai paga o café a todos os outros</strong>. Sem desculpas! (Se forem 2, o perdedor paga ao outro).',
             'rules.7': '<strong>Reiniciar</strong> limpa toda a lista e recomeça do zero — usa com moderação.',
             'rules.8': '<strong>Editar nomes</strong>: clica num nome para o renomear (ou usa o lápis). O nome deve continuar único e não vazio.',
-            'rules.9': '<strong>Presets</strong>: guarda a lista atual com um nome para a encontrares. Podes carregar ou eliminar um preset a qualquer momento.',
+            'rules.9': '<strong>Presets</strong>: guarda a lista atual com um nome para a encontrares. Podes carregar, atualizar ou eliminar um preset a qualquer momento.',
             'footer.text': '💡 Regra de ouro: quem ganha o sorteio não paga... nunca.',
             'alert.emptyName': '⚠️ Vá lá, escreve um nome!',
             'alert.duplicate': '⚠️ "{name}" já está na lista!',
@@ -352,7 +397,10 @@
             'preset.save': '💾 Guardar preset',
             'preset.empty': 'Nenhum preset guardado. Adiciona nomes e guarda a tua lista favorita!',
             'preset.loadBtn': 'Carregar',
+            'preset.updateBtn': 'Atualizar',
+            'preset.updateTitle': 'Substitui este preset pela lista atual',
             'preset.deleteBtn': 'Eliminar preset',
+            'preset.active': 'Ativo',
             'preset.modalTitle': 'Guardar preset',
             'preset.modalSubtitle': 'Dá um nome a esta lista para a encontrares facilmente.',
             'preset.namePlaceholder': 'Ex. Colegas de escritório, Amigos do bar...',
@@ -361,9 +409,15 @@
             'preset.needNames': 'Adiciona pelo menos um nome antes de guardar um preset!',
             'preset.emptyName': 'O nome do preset não pode estar vazio!',
             'preset.saved': 'Preset "{name}" guardado!',
-            'preset.duplicateName': 'Já existe um preset com este nome. Escolhe outro.',
+            'preset.duplicateWarning': '⚠️ Já existe um preset com este nome. Ao confirmar vais substituí-lo.',
+            'preset.overwriteTitle': 'Substituir o preset?',
+            'preset.overwriteMessage': 'Já existe um preset com este nome. Queres substituí-lo pela lista atual?',
+            'preset.overwrite': 'Substituir',
+            'preset.overwritten': 'Preset "{name}" substituído!',
             'preset.loaded': 'Preset "{name}" carregado!',
             'preset.confirmDelete': 'Queres mesmo eliminar o preset "{name}"?',
+            'preset.confirmUpdate': 'Queres substituir o preset "{name}" pela lista atual?',
+            'preset.updated': 'Preset "{name}" atualizado!',
             'preset.deleted': 'Preset "{name}" eliminado.',
             'preset.countOne': '1 nome',
             'preset.countMany': '{n} nomes',
@@ -387,6 +441,7 @@
     let lastResult = null;
     let presets = []; // { id, name, names: string[] }
     let editingIndex = -1;
+    let activePresetId = null; // preset attualmente caricato (evidenziato)
 
     // ==================================================================
     // RIFERIMENTI DOM
@@ -413,8 +468,14 @@
 
     const modalOverlay = document.getElementById('modalOverlay');
     const presetNameInput = document.getElementById('presetNameInput');
+    const modalWarning = document.getElementById('modalWarning');
     const modalCancelBtn = document.getElementById('modalCancelBtn');
     const modalSaveBtn = document.getElementById('modalSaveBtn');
+
+    const overwriteModalOverlay = document.getElementById('overwriteModalOverlay');
+    const overwriteModalMessage = document.getElementById('overwriteModalMessage');
+    const overwriteCancelBtn = document.getElementById('overwriteCancelBtn');
+    const overwriteConfirmBtn = document.getElementById('overwriteConfirmBtn');
 
     const langToggle = document.getElementById('langToggle');
     const langMenu = document.getElementById('langMenu');
@@ -423,6 +484,7 @@
     const langOptions = document.querySelectorAll('.lang-option');
 
     let modalResolve = null;
+    let overwriteModalResolve = null;
 
     // ==================================================================
     // TEMA / DARK MODE
@@ -499,7 +561,6 @@
         html.setAttribute('lang', currentLang);
         html.setAttribute('dir', RTL_LANGS.indexOf(currentLang) !== -1 ? 'rtl' : 'ltr');
 
-        // Aggiorna editing eventualmente aperto
         if (editingIndex >= 0 && editingIndex < partecipanti.length) {
             renderListaConEditing();
         }
@@ -585,6 +646,15 @@
         return 'p_' + Date.now().toString(36) + '_' + Math.random().toString(36).slice(2, 7);
     }
 
+    function isCurrentListEqualToPreset(preset) {
+        if (!preset) return false;
+        if (preset.names.length !== partecipanti.length) return false;
+        for (let i = 0; i < preset.names.length; i++) {
+            if (preset.names[i] !== partecipanti[i]) return false;
+        }
+        return true;
+    }
+
     function renderPresets() {
         presetList.innerHTML = '';
 
@@ -598,6 +668,11 @@
             const item = document.createElement('div');
             item.className = 'preset-item';
             item.setAttribute('data-id', preset.id);
+
+            const isActive = activePresetId === preset.id;
+            if (isActive) {
+                item.classList.add('active');
+            }
 
             const info = document.createElement('div');
             info.className = 'preset-item-info';
@@ -618,6 +693,22 @@
 
             const actions = document.createElement('div');
             actions.className = 'preset-item-actions';
+
+            // Bottone "Aggiorna" (sovrascrive il preset con la lista attuale)
+            // Visibile solo se ci sono nomi e la lista è diversa da quella salvata
+            if (partecipanti.length > 0 && !isCurrentListEqualToPreset(preset)) {
+                const updateBtn = document.createElement('button');
+                updateBtn.className = 'preset-action-btn preset-update-btn';
+                updateBtn.type = 'button';
+                updateBtn.textContent = '🔄 ' + t('preset.updateBtn');
+                updateBtn.title = t('preset.updateTitle');
+                updateBtn.setAttribute('aria-label', t('preset.updateTitle'));
+                updateBtn.addEventListener('click', function (e) {
+                    e.stopPropagation();
+                    sovrascriviPreset(preset.id);
+                });
+                actions.appendChild(updateBtn);
+            }
 
             const loadBtn = document.createElement('button');
             loadBtn.className = 'preset-action-btn';
@@ -652,11 +743,11 @@
 
         partecipanti = preset.names.slice();
         editingIndex = -1;
+        activePresetId = id;
         aggiornaInterfaccia();
         risultatoBox.style.display = 'none';
         lastResult = null;
 
-        // scroll alla lista
         listaPartecipanti.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
     }
 
@@ -666,44 +757,74 @@
         if (!confirm(t('preset.confirmDelete', { name: preset.name }))) return;
 
         presets = presets.filter(function (p) { return p.id !== id; });
+        if (activePresetId === id) activePresetId = null;
         savePresetsToStorage();
         renderPresets();
     }
 
+    // Sovrascrive un preset esistente con la lista attuale (chiede conferma)
+    function sovrascriviPreset(id) {
+        const preset = presets.find(function (p) { return p.id === id; });
+        if (!preset) return;
+        if (partecipanti.length === 0) {
+            alert(t('preset.needNames'));
+            return;
+        }
+        if (!confirm(t('preset.confirmUpdate', { name: preset.name }))) return;
+
+        preset.names = partecipanti.slice();
+        activePresetId = preset.id;
+        savePresetsToStorage();
+        renderPresets();
+        aggiornaInterfaccia();
+    }
+
+    // Apre il modal di salvataggio e gestisce duplicati con sovrascrittura
     function salvaPreset() {
         if (partecipanti.length === 0) {
             alert(t('preset.needNames'));
             return;
         }
         apriModalPreset().then(function (nomePreset) {
-            if (nomePreset === null) return; // annullato
+            if (nomePreset === null) return;
 
-            // Controllo duplicato
-            const exists = presets.some(function (p) {
+            const existing = presets.find(function (p) {
                 return p.name.toLowerCase() === nomePreset.toLowerCase();
             });
-            if (exists) {
-                alert(t('preset.duplicateName'));
-                return;
-            }
 
-            presets.push({
-                id: genId(),
-                name: nomePreset,
-                names: partecipanti.slice()
-            });
-            savePresetsToStorage();
-            renderPresets();
+            if (existing) {
+                apriModalOverwrite(nomePreset).then(function (conferma) {
+                    if (!conferma) return;
+                    existing.names = partecipanti.slice();
+                    activePresetId = existing.id;
+                    savePresetsToStorage();
+                    renderPresets();
+                    aggiornaInterfaccia();
+                });
+            } else {
+                const newPreset = {
+                    id: genId(),
+                    name: nomePreset,
+                    names: partecipanti.slice()
+                };
+                presets.push(newPreset);
+                activePresetId = newPreset.id;
+                savePresetsToStorage();
+                renderPresets();
+                aggiornaInterfaccia();
+            }
         });
     }
 
     // ==================================================================
-    // MODAL
+    // MODAL SALVA PRESET
     // ==================================================================
     function apriModalPreset() {
         return new Promise(function (resolve) {
             modalResolve = resolve;
             presetNameInput.value = '';
+            modalWarning.hidden = true;
+            modalWarning.textContent = '';
             modalOverlay.hidden = false;
             setTimeout(function () { presetNameInput.focus(); }, 50);
         });
@@ -717,6 +838,25 @@
             r(valore);
         }
     }
+
+    function updateDuplicateWarning() {
+        const nome = presetNameInput.value.trim();
+        if (nome === '') {
+            modalWarning.hidden = true;
+            return;
+        }
+        const existing = presets.find(function (p) {
+            return p.name.toLowerCase() === nome.toLowerCase();
+        });
+        if (existing) {
+            modalWarning.textContent = t('preset.duplicateWarning');
+            modalWarning.hidden = false;
+        } else {
+            modalWarning.hidden = true;
+        }
+    }
+
+    presetNameInput.addEventListener('input', updateDuplicateWarning);
 
     modalCancelBtn.addEventListener('click', function () { chiudiModal(null); });
     modalSaveBtn.addEventListener('click', function () {
@@ -740,9 +880,39 @@
         }
     });
 
+    // ==================================================================
+    // MODAL CONFERMA SOVRASCRITTURA
+    // ==================================================================
+    function apriModalOverwrite(nomePreset) {
+        return new Promise(function (resolve) {
+            overwriteModalResolve = resolve;
+            overwriteModalMessage.textContent = t('preset.overwriteMessage') +
+                '\n\n"' + nomePreset + '"';
+            overwriteModalOverlay.hidden = false;
+            setTimeout(function () { overwriteConfirmBtn.focus(); }, 50);
+        });
+    }
+
+    function chiudiModalOverwrite(valore) {
+        overwriteModalOverlay.hidden = true;
+        if (overwriteModalResolve) {
+            const r = overwriteModalResolve;
+            overwriteModalResolve = null;
+            r(valore);
+        }
+    }
+
+    overwriteCancelBtn.addEventListener('click', function () { chiudiModalOverwrite(false); });
+    overwriteConfirmBtn.addEventListener('click', function () { chiudiModalOverwrite(true); });
+
+    overwriteModalOverlay.addEventListener('click', function (e) {
+        if (e.target === overwriteModalOverlay) chiudiModalOverwrite(false);
+    });
+
     document.addEventListener('keydown', function (e) {
-        if (e.key === 'Escape' && !modalOverlay.hidden) {
-            chiudiModal(null);
+        if (e.key === 'Escape') {
+            if (!overwriteModalOverlay.hidden) chiudiModalOverwrite(false);
+            else if (!modalOverlay.hidden) chiudiModal(null);
         }
     });
 
@@ -764,7 +934,6 @@
             li.setAttribute('data-index', index);
 
             if (index === editingIndex) {
-                // Modalità editing
                 li.classList.add('editing');
 
                 const input = document.createElement('input');
@@ -885,6 +1054,7 @@
             risultatoBox.style.display = 'none';
             lastResult = null;
         }
+        renderPresets();
     }
 
     // ==================================================================
@@ -944,6 +1114,7 @@
         if (partecipanti.length > 0 && !confirm(t('confirm.reset'))) return;
         partecipanti = [];
         editingIndex = -1;
+        activePresetId = null;
         nomeInput.value = '';
         aggiornaInterfaccia();
         risultatoBox.style.display = 'none';

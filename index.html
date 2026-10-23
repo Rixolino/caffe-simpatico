@@ -80,9 +80,7 @@
                 💾 Salva preset
             </button>
         </div>
-        <div class="preset-list" id="presetList">
-            <!-- popolato via js -->
-        </div>
+        <div class="preset-list" id="presetList"></div>
         <div class="preset-empty" id="presetEmpty" data-i18n="preset.empty">
             Nessun preset salvato. Aggiungi nomi e salva la tua lista preferita!
         </div>
@@ -139,9 +137,24 @@
         <h3 id="modalTitle" data-i18n="preset.modalTitle">Salva preset</h3>
         <p class="modal-subtitle" data-i18n="preset.modalSubtitle">Dai un nome a questa lista per ritrovarla facilmente.</p>
         <input type="text" id="presetNameInput" class="modal-input" maxlength="40" autocomplete="off" data-i18n-placeholder="preset.namePlaceholder" placeholder="Es. Colleghi ufficio, Amici del bar...">
+        <div class="modal-warning" id="modalWarning" hidden></div>
         <div class="modal-actions">
             <button class="btn btn-secondary" id="modalCancelBtn" data-i18n="preset.cancel">Annulla</button>
             <button class="btn" id="modalSaveBtn" data-i18n="preset.confirm">Salva</button>
+        </div>
+    </div>
+</div>
+
+<!-- Modal conferma sovrascrittura -->
+<div class="modal-overlay" id="overwriteModalOverlay" hidden>
+    <div class="modal" role="dialog" aria-modal="true" aria-labelledby="overwriteModalTitle">
+        <h3 id="overwriteModalTitle" data-i18n="preset.overwriteTitle">Sovrascrivere il preset?</h3>
+        <p class="modal-subtitle" id="overwriteModalMessage" data-i18n="preset.overwriteMessage">
+            Esiste già un preset con questo nome. Vuoi sovrascriverlo con la lista attuale?
+        </p>
+        <div class="modal-actions">
+            <button class="btn btn-secondary" id="overwriteCancelBtn" data-i18n="preset.cancel">Annulla</button>
+            <button class="btn btn-danger" id="overwriteConfirmBtn" data-i18n="preset.overwrite">Sovrascrivi</button>
         </div>
     </div>
 </div>
