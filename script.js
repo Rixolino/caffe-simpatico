@@ -261,10 +261,8 @@
     const langOptions = document.querySelectorAll('.lang-option');
 
     // ==================================================================
-    // TEMA / DARK MODE
+    // TEMA / DARK MODE (automatico via CSS, aggiorniamo solo il meta)
     // ==================================================================
-    // Il tema è gestito automaticamente via CSS con prefers-color-scheme.
-    // Aggiorniamo solo il meta theme-color dinamicamente per una UX migliore.
     function updateThemeColor() {
         const isDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
         const color = isDark ? '#1a120b' : '#f5d6b3';
@@ -275,7 +273,6 @@
             document.head.appendChild(meta);
         }
         meta.setAttribute('content', color);
-        // Rimuoviamo i meta con media perché sovrascriverebbero il nostro
         document.querySelectorAll('meta[name="theme-color"][media]').forEach(function (m) {
             m.remove();
         });
@@ -285,7 +282,7 @@
     if (darkModeQuery.addEventListener) {
         darkModeQuery.addEventListener('change', updateThemeColor);
     } else if (darkModeQuery.addListener) {
-        darkModeQuery.addListener(updateThemeColor); // Safari < 14
+        darkModeQuery.addListener(updateThemeColor);
     }
     updateThemeColor();
 

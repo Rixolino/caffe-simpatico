@@ -35,7 +35,6 @@
     --text-primary: #4b2e1d;
     --text-secondary: #8b6b4f;
     --text-muted: #a48e7a;
-    --text-on-btn: #ffffff;
 
     --input-bg: #fffbf5;
     --input-border: #e2cfb8;
@@ -54,16 +53,21 @@
     --counter-shadow: #cc8800;
     --counter-text: #3e2417;
 
+    /* Bottone standard (marrone) */
     --btn-bg: linear-gradient(180deg, #8b5e3c 0%, #6f4e37 100%);
+    --btn-text: #ffffff;
     --btn-shadow: #3e2417;
     --btn-border: #8b6b4f;
 
+    /* Bottone secondario (crema) */
     --btn-secondary-bg: linear-gradient(180deg, #efe3d4 0%, #d9c7b0 100%);
     --btn-secondary-text: #3e2417;
     --btn-secondary-shadow: #b29e87;
     --btn-secondary-border: #cbb69c;
 
+    /* Bottone grande (arancione) */
     --btn-grande-bg: linear-gradient(180deg, #ff9d5c 0%, #ff8c42 50%, #f57c00 100%);
+    --btn-grande-text: #ffffff;
     --btn-grande-shadow: #b85c00;
     --btn-grande-border: #ffb077;
 
@@ -92,6 +96,10 @@
     --scrollbar-track: #f5e6d3;
     --scrollbar-thumb: #b48c63;
     --scrollbar-thumb-hover: #8b6b4f;
+
+    /* Sottotitolo: evidenziazione "tazza magica" */
+    --highlight-underline: rgba(255, 209, 102, 0.7);
+    --highlight-text: #6f4e37;
 
     /* Tazza */
     --cup-body-1: #fffcf8;
@@ -137,7 +145,6 @@
         --text-primary: #f5e3d0;
         --text-secondary: #c9a983;
         --text-muted: #9a8168;
-        --text-on-btn: #1a120b;
 
         --input-bg: #241810;
         --input-border: #4a3320;
@@ -156,16 +163,21 @@
         --counter-shadow: #5c3d0f;
         --counter-text: #fff4e0;
 
-        --btn-bg: linear-gradient(180deg, #b48c63 0%, #8b6b4f 100%);
+        /* Bottone standard (marrone chiaro) - testo scuro per contrasto */
+        --btn-bg: linear-gradient(180deg, #d4a878 0%, #b48c63 100%);
+        --btn-text: #1a120b;
         --btn-shadow: #2a1d14;
-        --btn-border: #d4a878;
+        --btn-border: #e0b88a;
 
+        /* Bottone secondario */
         --btn-secondary-bg: linear-gradient(180deg, #3a281a 0%, #2a1d14 100%);
         --btn-secondary-text: #f5e3d0;
         --btn-secondary-shadow: #140c06;
         --btn-secondary-border: #4a3320;
 
+        /* Bottone grande (arancione) */
         --btn-grande-bg: linear-gradient(180deg, #ff9d5c 0%, #ff8c42 50%, #d96a20 100%);
+        --btn-grande-text: #ffffff;
         --btn-grande-shadow: #6a3500;
         --btn-grande-border: #ffb077;
 
@@ -195,6 +207,11 @@
         --scrollbar-thumb: #6f4e37;
         --scrollbar-thumb-hover: #b48c63;
 
+        /* Sottotitolo: evidenziazione "tazza magica" */
+        --highlight-underline: rgba(255, 200, 107, 0.55);
+        --highlight-text: #ffd6a8;
+
+        /* Tazza */
         --cup-body-1: #f5e3d0;
         --cup-body-2: #d4b89a;
         --cup-body-3: #b8977a;
@@ -469,11 +486,13 @@ h1 .emoji:last-child {
     transition: color 0.4s ease;
 }
 
+/* === FIX EVIDENZIAZIONE "tazza magica" === */
 .sottotitolo .evidenzia {
-    background: linear-gradient(180deg, transparent 60%, rgba(255, 209, 102, 0.7) 60%);
+    background: linear-gradient(180deg, transparent 60%, var(--highlight-underline) 60%);
     padding: 0 4px;
     font-weight: 700;
-    color: var(--marrone);
+    color: var(--highlight-text);
+    transition: color 0.4s ease, background 0.4s ease;
 }
 
 /* === TAZZA VIRTUALE ANIMATA === */
@@ -762,10 +781,11 @@ h1 .emoji:last-child {
     font-style: italic;
 }
 
+/* === BOTTONE BASE === */
 .btn {
     background: var(--btn-bg);
     border: none;
-    color: var(--text-on-btn);
+    color: var(--btn-text);
     font-weight: 700;
     padding: 1rem 1.8rem;
     font-size: 1.05rem;
@@ -825,6 +845,7 @@ h1 .emoji:last-child {
     pointer-events: none;
 }
 
+/* === BOTTONE SECONDARIO === */
 .btn-secondary {
     background: var(--btn-secondary-bg);
     color: var(--btn-secondary-text);
@@ -839,10 +860,12 @@ h1 .emoji:last-child {
     box-shadow: 0 2px 0 var(--btn-secondary-shadow);
 }
 
+/* === FIX BOTTONE GRANDE "Agita la tazza e sorteggia" === */
 .btn-grande {
     padding: 1.2rem 2.2rem;
     font-size: 1.2rem;
     background: var(--btn-grande-bg);
+    color: var(--btn-grande-text);
     box-shadow:
         0 7px 0 var(--btn-grande-shadow),
         0 12px 24px rgba(255, 140, 66, 0.4),
@@ -861,8 +884,10 @@ h1 .emoji:last-child {
     box-shadow: 0 2px 0 var(--btn-grande-shadow);
 }
 
+/* Quando disabilitato (dark mode compreso) usa colori del secondario */
 .btn-grande:disabled {
     background: var(--btn-secondary-bg);
+    color: var(--btn-secondary-text);
     box-shadow: 0 4px 0 var(--btn-secondary-shadow);
 }
 
