@@ -233,6 +233,7 @@
     // ==================================================================
     let partecipanti = [];
     let currentLang = 'it';
+    let lastResult = null;
 
     // ==================================================================
     // RIFERIMENTI DOM
@@ -253,14 +254,40 @@
     const container = document.querySelector('.container');
     const regoleList = document.getElementById('regoleList');
 
-    // Selettore lingua
     const langToggle = document.getElementById('langToggle');
     const langMenu = document.getElementById('langMenu');
     const langCurrentFlag = langToggle.querySelector('.flag');
     const langCurrentCode = langToggle.querySelector('.lang-code');
     const langOptions = document.querySelectorAll('.lang-option');
 
-    let lastResult = null; // { estratto, altri } per ritradurre
+    // ==================================================================
+    // TEMA / DARK MODE
+    // ==================================================================
+    // Il tema è gestito automaticamente via CSS con prefers-color-scheme.
+    // Aggiorniamo solo il meta theme-color dinamicamente per una UX migliore.
+    function updateThemeColor() {
+        const isDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+        const color = isDark ? '#1a120b' : '#f5d6b3';
+        let meta = document.querySelector('meta[name="theme-color"]:not([media])');
+        if (!meta) {
+            meta = document.createElement('meta');
+            meta.setAttribute('name', 'theme-color');
+            document.head.appendChild(meta);
+        }
+        meta.setAttribute('content', color);
+        // Rimuoviamo i meta con media perché sovrascriverebbero il nostro
+        document.querySelectorAll('meta[name="theme-color"][media]').forEach(function (m) {
+            m.remove();
+        });
+    }
+
+    const darkModeQuery = window.matchMedia('(prefers-color-scheme: dark)');
+    if (darkModeQuery.addEventListener) {
+        darkModeQuery.addEventListener('change', updateThemeColor);
+    } else if (darkModeQuery.addListener) {
+        darkModeQuery.addListener(updateThemeColor); // Safari < 14
+    }
+    updateThemeColor();
 
     // ==================================================================
     // i18n
@@ -277,7 +304,6 @@
     }
 
     function applyTranslations() {
-        // Attributi
         document.querySelectorAll('[data-i18n]').forEach(function (el) {
             const key = el.getAttribute('data-i18n');
             el.innerHTML = t(key);
@@ -286,10 +312,8 @@
             el.setAttribute('placeholder', t(el.getAttribute('data-i18n-placeholder')));
         });
 
-        // Title
         document.title = t('title');
 
-        // Regole dinamiche
         if (regoleList) {
             regoleList.innerHTML = '';
             for (let i = 1; i <= 7; i++) {
@@ -299,15 +323,12 @@
             }
         }
 
-        // Contatore
         aggiornaContatore();
 
-        // Risultato esistente
         if (lastResult) {
             renderRisultato();
         }
 
-        // Selettore lingua UI
         langCurrentFlag.textContent = LANG_FLAGS[currentLang] || '🌐';
         langCurrentCode.textContent = t('lang.current');
         langToggle.setAttribute('aria-label', t('lang.menuLabel'));
@@ -321,7 +342,6 @@
             }
         });
 
-        // html lang attribute
         html.setAttribute('lang', currentLang);
         html.setAttribute('dir', RTL_LANGS.indexOf(currentLang) !== -1 ? 'rtl' : 'ltr');
     }
