@@ -76,9 +76,18 @@
     <div class="preset-panel">
         <div class="preset-header">
             <h3><span data-i18n="preset.title">💾 Preset salvati</span></h3>
-            <button class="btn btn-small btn-preset" id="salvaPresetBtn" data-i18n="preset.save" title="Salva la lista attuale come preset">
-                💾 Salva preset
-            </button>
+            <div class="preset-header-actions">
+                <button class="btn btn-small btn-preset" id="salvaPresetBtn" data-i18n="preset.save" title="Salva la lista attuale come preset">
+                    💾 Salva preset
+                </button>
+                <button class="btn btn-small btn-secondary" id="exportJsonBtn" data-i18n="preset.export" title="Esporta tutti i preset in un file JSON">
+                    📤 Esporta JSON
+                </button>
+                <button class="btn btn-small btn-secondary" id="importJsonBtn" data-i18n="preset.import" title="Importa preset da un file JSON">
+                    📥 Importa JSON
+                </button>
+                <input type="file" id="importFileInput" accept="application/json,.json" hidden>
+            </div>
         </div>
         <div class="preset-list" id="presetList"></div>
         <div class="preset-empty" id="presetEmpty" data-i18n="preset.empty">
@@ -155,6 +164,22 @@
         <div class="modal-actions">
             <button class="btn btn-secondary" id="overwriteCancelBtn" data-i18n="preset.cancel">Annulla</button>
             <button class="btn btn-danger" id="overwriteConfirmBtn" data-i18n="preset.overwrite">Sovrascrivi</button>
+        </div>
+    </div>
+</div>
+
+<!-- Modal import JSON: scelta strategia -->
+<div class="modal-overlay" id="importModalOverlay" hidden>
+    <div class="modal" role="dialog" aria-modal="true" aria-labelledby="importModalTitle">
+        <h3 id="importModalTitle" data-i18n="json.importTitle">Importa preset</h3>
+        <p class="modal-subtitle" id="importModalSubtitle" data-i18n="json.importSubtitle">
+            Il file contiene dei preset. Come vuoi importarli?
+        </p>
+        <div class="import-summary" id="importSummary"></div>
+        <div class="modal-actions modal-actions-stack">
+            <button class="btn btn-secondary" id="importMergeBtn" data-i18n="json.merge">🔀 Unisci con quelli esistenti</button>
+            <button class="btn btn-danger" id="importReplaceBtn" data-i18n="json.replace">⚠️ Sostituisci tutti</button>
+            <button class="btn btn-secondary" id="importCancelBtn" data-i18n="preset.cancel">Annulla</button>
         </div>
     </div>
 </div>

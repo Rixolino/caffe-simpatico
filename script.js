@@ -36,6 +36,7 @@
             'rules.7': '<strong>Reset</strong> pulisce tutta la lista e ricomincia da zero — usalo con parsimonia.',
             'rules.8': '<strong>Modifica nomi</strong>: clicca sul nome per rinominarlo (o usa la matitina). Il nome deve restare unico e non vuoto.',
             'rules.9': '<strong>Preset</strong>: salva la lista attuale con un nome per ritrovarla. Puoi caricare, aggiornare o eliminare un preset in qualsiasi momento.',
+            'rules.10': '<strong>Import/Export JSON</strong>: esporta tutti i preset in un file per backup o condivisione, e importali su un altro dispositivo.',
             'footer.text': '💡 Regola d\'oro: chi vince il sorteggio non paga... mai.',
             'alert.emptyName': '⚠️ Dai, scrivi un nome!',
             'alert.duplicate': '⚠️ "{name}" c\'è già!',
@@ -45,12 +46,13 @@
             'lang.menuLabel': 'Seleziona lingua',
             'preset.title': '💾 Preset salvati',
             'preset.save': '💾 Salva preset',
+            'preset.export': '📤 Esporta JSON',
+            'preset.import': '📥 Importa JSON',
             'preset.empty': 'Nessun preset salvato. Aggiungi nomi e salva la tua lista preferita!',
             'preset.loadBtn': 'Carica',
             'preset.updateBtn': 'Aggiorna',
             'preset.updateTitle': 'Sovrascrive questo preset con la lista attuale',
             'preset.deleteBtn': 'Elimina preset',
-            'preset.active': 'Attivo',
             'preset.modalTitle': 'Salva preset',
             'preset.modalSubtitle': 'Dai un nome a questa lista per ritrovarla facilmente.',
             'preset.namePlaceholder': 'Es. Colleghi ufficio, Amici del bar...',
@@ -58,19 +60,32 @@
             'preset.confirm': 'Salva',
             'preset.needNames': 'Aggiungi almeno un nome prima di salvare un preset!',
             'preset.emptyName': 'Il nome del preset non può essere vuoto!',
-            'preset.saved': 'Preset "{name}" salvato!',
             'preset.duplicateWarning': '⚠️ Esiste già un preset con questo nome. Confermando lo sovrascriverai.',
             'preset.overwriteTitle': 'Sovrascrivere il preset?',
             'preset.overwriteMessage': 'Esiste già un preset con questo nome. Vuoi sovrascriverlo con la lista attuale?',
             'preset.overwrite': 'Sovrascrivi',
-            'preset.overwritten': 'Preset "{name}" sovrascritto!',
-            'preset.loaded': 'Preset "{name}" caricato!',
             'preset.confirmDelete': 'Vuoi davvero eliminare il preset "{name}"?',
             'preset.confirmUpdate': 'Vuoi sovrascrivere il preset "{name}" con la lista attuale?',
-            'preset.updated': 'Preset "{name}" aggiornato!',
-            'preset.deleted': 'Preset "{name}" eliminato.',
             'preset.countOne': '1 nome',
             'preset.countMany': '{n} nomi',
+            'json.exportTitle': 'Esporta preset',
+            'json.exportEmpty': 'Non ci sono preset da esportare. Salvane almeno uno!',
+            'json.exportSuccess': 'Esportati {n} preset in "{file}"',
+            'json.exportError': 'Errore durante l\'esportazione del file.',
+            'json.importTitle': 'Importa preset',
+            'json.importSubtitle': 'Il file contiene dei preset. Come vuoi importarli?',
+            'json.importInvalid': 'Il file non è un JSON valido o non contiene preset riconoscibili.',
+            'json.importEmpty': 'Il file non contiene alcun preset.',
+            'json.importSummary': 'Trovati {n} preset nel file',
+            'json.importSummaryExisting': 'Preset attuali: {n}',
+            'json.importMergeInfo': 'I preset con lo stesso nome verranno sovrascritti.',
+            'json.importReplaceInfo': 'Tutti i preset attuali verranno cancellati.',
+            'json.merge': '🔀 Unisci con quelli esistenti',
+            'json.replace': '⚠️ Sostituisci tutti',
+            'json.mergeSuccess': 'Uniti {n} preset!',
+            'json.replaceSuccess': 'Sostituiti con {n} preset!',
+            'json.importCanceled': 'Importazione annullata.',
+            'json.exportFileName': 'preset-caffe',
             'edit.tooltip': 'Clicca per modificare',
             'edit.save': 'Salva',
             'edit.duplicate': 'Questo nome esiste già!',
@@ -106,6 +121,7 @@
             'rules.7': '<strong>Reset</strong> clears the whole list and starts from scratch — use sparingly.',
             'rules.8': '<strong>Edit names</strong>: click on a name to rename it (or use the pencil). The name must stay unique and non-empty.',
             'rules.9': '<strong>Presets</strong>: save the current list with a name to find it again. You can load, update or delete a preset at any time.',
+            'rules.10': '<strong>JSON Import/Export</strong>: export all presets to a file for backup or sharing, and import them on another device.',
             'footer.text': '💡 Golden rule: whoever wins the draw never pays... ever.',
             'alert.emptyName': '⚠️ Come on, type a name!',
             'alert.duplicate': '⚠️ "{name}" is already in the list!',
@@ -115,12 +131,13 @@
             'lang.menuLabel': 'Select language',
             'preset.title': '💾 Saved presets',
             'preset.save': '💾 Save preset',
+            'preset.export': '📤 Export JSON',
+            'preset.import': '📥 Import JSON',
             'preset.empty': 'No presets saved. Add names and save your favorite list!',
             'preset.loadBtn': 'Load',
             'preset.updateBtn': 'Update',
             'preset.updateTitle': 'Overwrite this preset with the current list',
             'preset.deleteBtn': 'Delete preset',
-            'preset.active': 'Active',
             'preset.modalTitle': 'Save preset',
             'preset.modalSubtitle': 'Give this list a name to find it easily.',
             'preset.namePlaceholder': 'e.g. Office colleagues, Bar friends...',
@@ -128,19 +145,32 @@
             'preset.confirm': 'Save',
             'preset.needNames': 'Add at least one name before saving a preset!',
             'preset.emptyName': 'Preset name cannot be empty!',
-            'preset.saved': 'Preset "{name}" saved!',
             'preset.duplicateWarning': '⚠️ A preset with this name already exists. Confirming will overwrite it.',
             'preset.overwriteTitle': 'Overwrite preset?',
             'preset.overwriteMessage': 'A preset with this name already exists. Do you want to overwrite it with the current list?',
             'preset.overwrite': 'Overwrite',
-            'preset.overwritten': 'Preset "{name}" overwritten!',
-            'preset.loaded': 'Preset "{name}" loaded!',
             'preset.confirmDelete': 'Do you really want to delete the preset "{name}"?',
             'preset.confirmUpdate': 'Do you want to overwrite the preset "{name}" with the current list?',
-            'preset.updated': 'Preset "{name}" updated!',
-            'preset.deleted': 'Preset "{name}" deleted.',
             'preset.countOne': '1 name',
             'preset.countMany': '{n} names',
+            'json.exportTitle': 'Export presets',
+            'json.exportEmpty': 'There are no presets to export. Save at least one!',
+            'json.exportSuccess': 'Exported {n} presets to "{file}"',
+            'json.exportError': 'Error while exporting the file.',
+            'json.importTitle': 'Import presets',
+            'json.importSubtitle': 'The file contains presets. How do you want to import them?',
+            'json.importInvalid': 'The file is not valid JSON or does not contain recognizable presets.',
+            'json.importEmpty': 'The file does not contain any presets.',
+            'json.importSummary': 'Found {n} presets in the file',
+            'json.importSummaryExisting': 'Current presets: {n}',
+            'json.importMergeInfo': 'Presets with the same name will be overwritten.',
+            'json.importReplaceInfo': 'All current presets will be deleted.',
+            'json.merge': '🔀 Merge with existing',
+            'json.replace': '⚠️ Replace all',
+            'json.mergeSuccess': 'Merged {n} presets!',
+            'json.replaceSuccess': 'Replaced with {n} presets!',
+            'json.importCanceled': 'Import canceled.',
+            'json.exportFileName': 'coffee-presets',
             'edit.tooltip': 'Click to edit',
             'edit.save': 'Save',
             'edit.duplicate': 'This name already exists!',
@@ -176,6 +206,7 @@
             'rules.7': '<strong>Reiniciar</strong> limpia toda la lista y empieza de cero — úsalo con moderación.',
             'rules.8': '<strong>Editar nombres</strong>: haz clic en un nombre para renombrarlo (o usa el lápiz). El nombre debe seguir siendo único y no vacío.',
             'rules.9': '<strong>Presets</strong>: guarda la lista actual con un nombre para encontrarla. Puedes cargar, actualizar o eliminar un preset en cualquier momento.',
+            'rules.10': '<strong>Import/Export JSON</strong>: exporta todos los presets a un archivo para copia de seguridad o compartir, e impórtalos en otro dispositivo.',
             'footer.text': '💡 Regla de oro: quien gana el sorteo no paga... nunca.',
             'alert.emptyName': '⚠️ ¡Vamos, escribe un nombre!',
             'alert.duplicate': '⚠️ ¡"{name}" ya está en la lista!',
@@ -185,12 +216,13 @@
             'lang.menuLabel': 'Seleccionar idioma',
             'preset.title': '💾 Presets guardados',
             'preset.save': '💾 Guardar preset',
+            'preset.export': '📤 Exportar JSON',
+            'preset.import': '📥 Importar JSON',
             'preset.empty': 'Ningún preset guardado. ¡Añade nombres y guarda tu lista favorita!',
             'preset.loadBtn': 'Cargar',
             'preset.updateBtn': 'Actualizar',
             'preset.updateTitle': 'Sobrescribe este preset con la lista actual',
             'preset.deleteBtn': 'Eliminar preset',
-            'preset.active': 'Activo',
             'preset.modalTitle': 'Guardar preset',
             'preset.modalSubtitle': 'Dale un nombre a esta lista para encontrarla fácilmente.',
             'preset.namePlaceholder': 'Ej. Compañeros de oficina, Amigos del bar...',
@@ -198,19 +230,32 @@
             'preset.confirm': 'Guardar',
             'preset.needNames': '¡Añade al menos un nombre antes de guardar un preset!',
             'preset.emptyName': '¡El nombre del preset no puede estar vacío!',
-            'preset.saved': '¡Preset "{name}" guardado!',
             'preset.duplicateWarning': '⚠️ Ya existe un preset con este nombre. Al confirmar lo sobrescribirás.',
             'preset.overwriteTitle': '¿Sobrescribir el preset?',
             'preset.overwriteMessage': 'Ya existe un preset con este nombre. ¿Quieres sobrescribirlo con la lista actual?',
             'preset.overwrite': 'Sobrescribir',
-            'preset.overwritten': '¡Preset "{name}" sobrescrito!',
-            'preset.loaded': '¡Preset "{name}" cargado!',
             'preset.confirmDelete': '¿Seguro que quieres eliminar el preset "{name}"?',
             'preset.confirmUpdate': '¿Quieres sobrescribir el preset "{name}" con la lista actual?',
-            'preset.updated': '¡Preset "{name}" actualizado!',
-            'preset.deleted': 'Preset "{name}" eliminado.',
             'preset.countOne': '1 nombre',
             'preset.countMany': '{n} nombres',
+            'json.exportTitle': 'Exportar presets',
+            'json.exportEmpty': 'No hay presets para exportar. ¡Guarda al menos uno!',
+            'json.exportSuccess': 'Exportados {n} presets a "{file}"',
+            'json.exportError': 'Error al exportar el archivo.',
+            'json.importTitle': 'Importar presets',
+            'json.importSubtitle': 'El archivo contiene presets. ¿Cómo quieres importarlos?',
+            'json.importInvalid': 'El archivo no es un JSON válido o no contiene presets reconocibles.',
+            'json.importEmpty': 'El archivo no contiene ningún preset.',
+            'json.importSummary': 'Encontrados {n} presets en el archivo',
+            'json.importSummaryExisting': 'Presets actuales: {n}',
+            'json.importMergeInfo': 'Los presets con el mismo nombre serán sobrescritos.',
+            'json.importReplaceInfo': 'Todos los presets actuales serán eliminados.',
+            'json.merge': '🔀 Unir con los existentes',
+            'json.replace': '⚠️ Reemplazar todos',
+            'json.mergeSuccess': '¡Unidos {n} presets!',
+            'json.replaceSuccess': '¡Reemplazados con {n} presets!',
+            'json.importCanceled': 'Importación cancelada.',
+            'json.exportFileName': 'presets-cafe',
             'edit.tooltip': 'Clic para editar',
             'edit.save': 'Guardar',
             'edit.duplicate': '¡Este nombre ya existe!',
@@ -246,6 +291,7 @@
             'rules.7': '<strong>Réinitialiser</strong> vide toute la liste et recommence de zéro — à utiliser avec parcimonie.',
             'rules.8': '<strong>Modifier les noms</strong> : clique sur un nom pour le renommer (ou utilise le crayon). Le nom doit rester unique et non vide.',
             'rules.9': '<strong>Presets</strong> : sauvegarde la liste actuelle avec un nom pour la retrouver. Tu peux charger, mettre à jour ou supprimer un preset à tout moment.',
+            'rules.10': '<strong>Import/Export JSON</strong> : exporte tous les presets dans un fichier pour sauvegarde ou partage, et importe-les sur un autre appareil.',
             'footer.text': '💡 Règle d\'or : celui qui gagne le tirage ne paie... jamais.',
             'alert.emptyName': '⚠️ Allez, écris un nom !',
             'alert.duplicate': '⚠️ "{name}" est déjà dans la liste !',
@@ -255,12 +301,13 @@
             'lang.menuLabel': 'Choisir la langue',
             'preset.title': '💾 Presets sauvegardés',
             'preset.save': '💾 Sauver preset',
+            'preset.export': '📤 Exporter JSON',
+            'preset.import': '📥 Importer JSON',
             'preset.empty': 'Aucun preset sauvegardé. Ajoute des noms et sauvegarde ta liste préférée !',
             'preset.loadBtn': 'Charger',
             'preset.updateBtn': 'Mettre à jour',
             'preset.updateTitle': 'Écrase ce preset avec la liste actuelle',
             'preset.deleteBtn': 'Supprimer preset',
-            'preset.active': 'Actif',
             'preset.modalTitle': 'Sauver preset',
             'preset.modalSubtitle': 'Donne un nom à cette liste pour la retrouver facilement.',
             'preset.namePlaceholder': 'Ex. Collègues bureau, Amis du bar...',
@@ -268,19 +315,32 @@
             'preset.confirm': 'Sauver',
             'preset.needNames': 'Ajoute au moins un nom avant de sauvegarder un preset !',
             'preset.emptyName': 'Le nom du preset ne peut pas être vide !',
-            'preset.saved': 'Preset "{name}" sauvegardé !',
             'preset.duplicateWarning': '⚠️ Un preset avec ce nom existe déjà. En confirmant tu l\'écraseras.',
             'preset.overwriteTitle': 'Écraser le preset ?',
             'preset.overwriteMessage': 'Un preset avec ce nom existe déjà. Veux-tu l\'écraser avec la liste actuelle ?',
             'preset.overwrite': 'Écraser',
-            'preset.overwritten': 'Preset "{name}" écrasé !',
-            'preset.loaded': 'Preset "{name}" chargé !',
             'preset.confirmDelete': 'Veux-tu vraiment supprimer le preset "{name}" ?',
             'preset.confirmUpdate': 'Veux-tu écraser le preset "{name}" avec la liste actuelle ?',
-            'preset.updated': 'Preset "{name}" mis à jour !',
-            'preset.deleted': 'Preset "{name}" supprimé.',
             'preset.countOne': '1 nom',
             'preset.countMany': '{n} noms',
+            'json.exportTitle': 'Exporter les presets',
+            'json.exportEmpty': 'Il n\'y a aucun preset à exporter. Sauvegarde-en au moins un !',
+            'json.exportSuccess': '{n} presets exportés dans "{file}"',
+            'json.exportError': 'Erreur lors de l\'exportation du fichier.',
+            'json.importTitle': 'Importer des presets',
+            'json.importSubtitle': 'Le fichier contient des presets. Comment veux-tu les importer ?',
+            'json.importInvalid': 'Le fichier n\'est pas un JSON valide ou ne contient pas de presets reconnaissables.',
+            'json.importEmpty': 'Le fichier ne contient aucun preset.',
+            'json.importSummary': '{n} presets trouvés dans le fichier',
+            'json.importSummaryExisting': 'Presets actuels : {n}',
+            'json.importMergeInfo': 'Les presets avec le même nom seront écrasés.',
+            'json.importReplaceInfo': 'Tous les presets actuels seront supprimés.',
+            'json.merge': '🔀 Fusionner avec les existants',
+            'json.replace': '⚠️ Tout remplacer',
+            'json.mergeSuccess': '{n} presets fusionnés !',
+            'json.replaceSuccess': 'Remplacés par {n} presets !',
+            'json.importCanceled': 'Importation annulée.',
+            'json.exportFileName': 'presets-cafe',
             'edit.tooltip': 'Cliquer pour modifier',
             'edit.save': 'Enregistrer',
             'edit.duplicate': 'Ce nom existe déjà !',
@@ -316,6 +376,7 @@
             'rules.7': '<strong>Zurücksetzen</strong> leert die gesamte Liste und startet von vorne — sparsam verwenden.',
             'rules.8': '<strong>Namen bearbeiten</strong>: Klicke auf einen Namen, um ihn umzubenennen (oder benutze den Stift). Der Name muss eindeutig und nicht leer bleiben.',
             'rules.9': '<strong>Presets</strong>: Speichere die aktuelle Liste mit einem Namen, um sie wiederzufinden. Du kannst ein Preset jederzeit laden, aktualisieren oder löschen.',
+            'rules.10': '<strong>JSON Import/Export</strong>: Exportiere alle Presets in eine Datei für Backup oder Teilen und importiere sie auf einem anderen Gerät.',
             'footer.text': '💡 Goldene Regel: Wer die Auslosung gewinnt, zahlt... niemals.',
             'alert.emptyName': '⚠️ Komm schon, gib einen Namen ein!',
             'alert.duplicate': '⚠️ "{name}" ist bereits in der Liste!',
@@ -325,12 +386,13 @@
             'lang.menuLabel': 'Sprache auswählen',
             'preset.title': '💾 Gespeicherte Presets',
             'preset.save': '💾 Preset speichern',
+            'preset.export': '📤 JSON exportieren',
+            'preset.import': '📥 JSON importieren',
             'preset.empty': 'Keine Presets gespeichert. Füge Namen hinzu und speichere deine Lieblingsliste!',
             'preset.loadBtn': 'Laden',
             'preset.updateBtn': 'Aktualisieren',
             'preset.updateTitle': 'Überschreibt dieses Preset mit der aktuellen Liste',
             'preset.deleteBtn': 'Preset löschen',
-            'preset.active': 'Aktiv',
             'preset.modalTitle': 'Preset speichern',
             'preset.modalSubtitle': 'Gib dieser Liste einen Namen, um sie leicht wiederzufinden.',
             'preset.namePlaceholder': 'z.B. Bürokollegen, Barfreunde...',
@@ -338,19 +400,32 @@
             'preset.confirm': 'Speichern',
             'preset.needNames': 'Füge mindestens einen Namen hinzu, bevor du ein Preset speicherst!',
             'preset.emptyName': 'Der Preset-Name darf nicht leer sein!',
-            'preset.saved': 'Preset "{name}" gespeichert!',
             'preset.duplicateWarning': '⚠️ Ein Preset mit diesem Namen existiert bereits. Beim Bestätigen wird es überschrieben.',
             'preset.overwriteTitle': 'Preset überschreiben?',
             'preset.overwriteMessage': 'Ein Preset mit diesem Namen existiert bereits. Willst du es mit der aktuellen Liste überschreiben?',
             'preset.overwrite': 'Überschreiben',
-            'preset.overwritten': 'Preset "{name}" überschrieben!',
-            'preset.loaded': 'Preset "{name}" geladen!',
             'preset.confirmDelete': 'Willst du das Preset "{name}" wirklich löschen?',
             'preset.confirmUpdate': 'Willst du das Preset "{name}" mit der aktuellen Liste überschreiben?',
-            'preset.updated': 'Preset "{name}" aktualisiert!',
-            'preset.deleted': 'Preset "{name}" gelöscht.',
             'preset.countOne': '1 Name',
             'preset.countMany': '{n} Namen',
+            'json.exportTitle': 'Presets exportieren',
+            'json.exportEmpty': 'Es gibt keine Presets zum Exportieren. Speichere mindestens eines!',
+            'json.exportSuccess': '{n} Presets in "{file}" exportiert',
+            'json.exportError': 'Fehler beim Exportieren der Datei.',
+            'json.importTitle': 'Presets importieren',
+            'json.importSubtitle': 'Die Datei enthält Presets. Wie möchtest du sie importieren?',
+            'json.importInvalid': 'Die Datei ist kein gültiges JSON oder enthält keine erkennbaren Presets.',
+            'json.importEmpty': 'Die Datei enthält keine Presets.',
+            'json.importSummary': '{n} Presets in der Datei gefunden',
+            'json.importSummaryExisting': 'Aktuelle Presets: {n}',
+            'json.importMergeInfo': 'Presets mit demselben Namen werden überschrieben.',
+            'json.importReplaceInfo': 'Alle aktuellen Presets werden gelöscht.',
+            'json.merge': '🔀 Mit vorhandenen zusammenführen',
+            'json.replace': '⚠️ Alle ersetzen',
+            'json.mergeSuccess': '{n} Presets zusammengeführt!',
+            'json.replaceSuccess': 'Durch {n} Presets ersetzt!',
+            'json.importCanceled': 'Import abgebrochen.',
+            'json.exportFileName': 'kaffee-presets',
             'edit.tooltip': 'Klicken zum Bearbeiten',
             'edit.save': 'Speichern',
             'edit.duplicate': 'Dieser Name existiert bereits!',
@@ -386,6 +461,7 @@
             'rules.7': '<strong>Reiniciar</strong> limpa toda a lista e recomeça do zero — usa com moderação.',
             'rules.8': '<strong>Editar nomes</strong>: clica num nome para o renomear (ou usa o lápis). O nome deve continuar único e não vazio.',
             'rules.9': '<strong>Presets</strong>: guarda a lista atual com um nome para a encontrares. Podes carregar, atualizar ou eliminar um preset a qualquer momento.',
+            'rules.10': '<strong>Import/Export JSON</strong>: exporta todos os presets para um ficheiro para backup ou partilha, e importa-os noutro dispositivo.',
             'footer.text': '💡 Regra de ouro: quem ganha o sorteio não paga... nunca.',
             'alert.emptyName': '⚠️ Vá lá, escreve um nome!',
             'alert.duplicate': '⚠️ "{name}" já está na lista!',
@@ -395,12 +471,13 @@
             'lang.menuLabel': 'Selecionar idioma',
             'preset.title': '💾 Presets guardados',
             'preset.save': '💾 Guardar preset',
+            'preset.export': '📤 Exportar JSON',
+            'preset.import': '📥 Importar JSON',
             'preset.empty': 'Nenhum preset guardado. Adiciona nomes e guarda a tua lista favorita!',
             'preset.loadBtn': 'Carregar',
             'preset.updateBtn': 'Atualizar',
             'preset.updateTitle': 'Substitui este preset pela lista atual',
             'preset.deleteBtn': 'Eliminar preset',
-            'preset.active': 'Ativo',
             'preset.modalTitle': 'Guardar preset',
             'preset.modalSubtitle': 'Dá um nome a esta lista para a encontrares facilmente.',
             'preset.namePlaceholder': 'Ex. Colegas de escritório, Amigos do bar...',
@@ -408,19 +485,32 @@
             'preset.confirm': 'Guardar',
             'preset.needNames': 'Adiciona pelo menos um nome antes de guardar um preset!',
             'preset.emptyName': 'O nome do preset não pode estar vazio!',
-            'preset.saved': 'Preset "{name}" guardado!',
             'preset.duplicateWarning': '⚠️ Já existe um preset com este nome. Ao confirmar vais substituí-lo.',
             'preset.overwriteTitle': 'Substituir o preset?',
             'preset.overwriteMessage': 'Já existe um preset com este nome. Queres substituí-lo pela lista atual?',
             'preset.overwrite': 'Substituir',
-            'preset.overwritten': 'Preset "{name}" substituído!',
-            'preset.loaded': 'Preset "{name}" carregado!',
             'preset.confirmDelete': 'Queres mesmo eliminar o preset "{name}"?',
             'preset.confirmUpdate': 'Queres substituir o preset "{name}" pela lista atual?',
-            'preset.updated': 'Preset "{name}" atualizado!',
-            'preset.deleted': 'Preset "{name}" eliminado.',
             'preset.countOne': '1 nome',
             'preset.countMany': '{n} nomes',
+            'json.exportTitle': 'Exportar presets',
+            'json.exportEmpty': 'Não há presets para exportar. Guarda pelo menos um!',
+            'json.exportSuccess': 'Exportados {n} presets para "{file}"',
+            'json.exportError': 'Erro ao exportar o ficheiro.',
+            'json.importTitle': 'Importar presets',
+            'json.importSubtitle': 'O ficheiro contém presets. Como queres importá-los?',
+            'json.importInvalid': 'O ficheiro não é um JSON válido ou não contém presets reconhecíveis.',
+            'json.importEmpty': 'O ficheiro não contém nenhum preset.',
+            'json.importSummary': 'Encontrados {n} presets no ficheiro',
+            'json.importSummaryExisting': 'Presets atuais: {n}',
+            'json.importMergeInfo': 'Os presets com o mesmo nome serão substituídos.',
+            'json.importReplaceInfo': 'Todos os presets atuais serão eliminados.',
+            'json.merge': '🔀 Juntar com os existentes',
+            'json.replace': '⚠️ Substituir todos',
+            'json.mergeSuccess': 'Juntados {n} presets!',
+            'json.replaceSuccess': 'Substituídos por {n} presets!',
+            'json.importCanceled': 'Importação cancelada.',
+            'json.exportFileName': 'presets-cafe',
             'edit.tooltip': 'Clica para editar',
             'edit.save': 'Guardar',
             'edit.duplicate': 'Este nome já existe!',
@@ -432,6 +522,7 @@
     const SUPPORTED_LANGS = Object.keys(translations);
     const LANG_FLAGS = { it: '🇮🇹', en: '🇬🇧', es: '🇪🇸', fr: '🇫🇷', de: '🇩🇪', pt: '🇵🇹' };
     const PRESET_STORAGE_KEY = 'coffeePresets';
+    const JSON_FORMAT_VERSION = 1;
 
     // ==================================================================
     // STATO
@@ -439,9 +530,9 @@
     let partecipanti = [];
     let currentLang = 'it';
     let lastResult = null;
-    let presets = []; // { id, name, names: string[] }
+    let presets = [];
     let editingIndex = -1;
-    let activePresetId = null; // preset attualmente caricato (evidenziato)
+    let activePresetId = null;
 
     // ==================================================================
     // RIFERIMENTI DOM
@@ -465,6 +556,9 @@
     const presetList = document.getElementById('presetList');
     const presetEmpty = document.getElementById('presetEmpty');
     const salvaPresetBtn = document.getElementById('salvaPresetBtn');
+    const exportJsonBtn = document.getElementById('exportJsonBtn');
+    const importJsonBtn = document.getElementById('importJsonBtn');
+    const importFileInput = document.getElementById('importFileInput');
 
     const modalOverlay = document.getElementById('modalOverlay');
     const presetNameInput = document.getElementById('presetNameInput');
@@ -477,6 +571,12 @@
     const overwriteCancelBtn = document.getElementById('overwriteCancelBtn');
     const overwriteConfirmBtn = document.getElementById('overwriteConfirmBtn');
 
+    const importModalOverlay = document.getElementById('importModalOverlay');
+    const importSummary = document.getElementById('importSummary');
+    const importMergeBtn = document.getElementById('importMergeBtn');
+    const importReplaceBtn = document.getElementById('importReplaceBtn');
+    const importCancelBtn = document.getElementById('importCancelBtn');
+
     const langToggle = document.getElementById('langToggle');
     const langMenu = document.getElementById('langMenu');
     const langCurrentFlag = langToggle.querySelector('.flag');
@@ -485,6 +585,7 @@
 
     let modalResolve = null;
     let overwriteModalResolve = null;
+    let importModalResolve = null;
 
     // ==================================================================
     // TEMA / DARK MODE
@@ -499,17 +600,12 @@
             document.head.appendChild(meta);
         }
         meta.setAttribute('content', color);
-        document.querySelectorAll('meta[name="theme-color"][media]').forEach(function (m) {
-            m.remove();
-        });
+        document.querySelectorAll('meta[name="theme-color"][media]').forEach(function (m) { m.remove(); });
     }
 
     const darkModeQuery = window.matchMedia('(prefers-color-scheme: dark)');
-    if (darkModeQuery.addEventListener) {
-        darkModeQuery.addEventListener('change', updateThemeColor);
-    } else if (darkModeQuery.addListener) {
-        darkModeQuery.addListener(updateThemeColor);
-    }
+    if (darkModeQuery.addEventListener) darkModeQuery.addEventListener('change', updateThemeColor);
+    else if (darkModeQuery.addListener) darkModeQuery.addListener(updateThemeColor);
     updateThemeColor();
 
     // ==================================================================
@@ -538,7 +634,7 @@
 
         if (regoleList) {
             regoleList.innerHTML = '';
-            for (let i = 1; i <= 9; i++) {
+            for (let i = 1; i <= 10; i++) {
                 const li = document.createElement('li');
                 li.innerHTML = t('rules.' + i);
                 regoleList.appendChild(li);
@@ -637,9 +733,7 @@
     }
 
     function savePresetsToStorage() {
-        try {
-            localStorage.setItem(PRESET_STORAGE_KEY, JSON.stringify(presets));
-        } catch (e) {}
+        try { localStorage.setItem(PRESET_STORAGE_KEY, JSON.stringify(presets)); } catch (e) {}
     }
 
     function genId() {
@@ -657,7 +751,6 @@
 
     function renderPresets() {
         presetList.innerHTML = '';
-
         if (presets.length === 0) {
             presetEmpty.style.display = 'block';
             return;
@@ -668,11 +761,7 @@
             const item = document.createElement('div');
             item.className = 'preset-item';
             item.setAttribute('data-id', preset.id);
-
-            const isActive = activePresetId === preset.id;
-            if (isActive) {
-                item.classList.add('active');
-            }
+            if (activePresetId === preset.id) item.classList.add('active');
 
             const info = document.createElement('div');
             info.className = 'preset-item-info';
@@ -694,15 +783,12 @@
             const actions = document.createElement('div');
             actions.className = 'preset-item-actions';
 
-            // Bottone "Aggiorna" (sovrascrive il preset con la lista attuale)
-            // Visibile solo se ci sono nomi e la lista è diversa da quella salvata
             if (partecipanti.length > 0 && !isCurrentListEqualToPreset(preset)) {
                 const updateBtn = document.createElement('button');
                 updateBtn.className = 'preset-action-btn preset-update-btn';
                 updateBtn.type = 'button';
                 updateBtn.textContent = '🔄 ' + t('preset.updateBtn');
                 updateBtn.title = t('preset.updateTitle');
-                updateBtn.setAttribute('aria-label', t('preset.updateTitle'));
                 updateBtn.addEventListener('click', function (e) {
                     e.stopPropagation();
                     sovrascriviPreset(preset.id);
@@ -714,9 +800,7 @@
             loadBtn.className = 'preset-action-btn';
             loadBtn.type = 'button';
             loadBtn.textContent = '📥 ' + t('preset.loadBtn');
-            loadBtn.addEventListener('click', function () {
-                caricaPreset(preset.id);
-            });
+            loadBtn.addEventListener('click', function () { caricaPreset(preset.id); });
 
             const delBtn = document.createElement('button');
             delBtn.className = 'preset-icon-btn';
@@ -724,9 +808,7 @@
             delBtn.innerHTML = '✕';
             delBtn.setAttribute('aria-label', t('preset.deleteBtn'));
             delBtn.title = t('preset.deleteBtn');
-            delBtn.addEventListener('click', function () {
-                eliminaPreset(preset.id);
-            });
+            delBtn.addEventListener('click', function () { eliminaPreset(preset.id); });
 
             actions.appendChild(loadBtn);
             actions.appendChild(delBtn);
@@ -740,14 +822,12 @@
     function caricaPreset(id) {
         const preset = presets.find(function (p) { return p.id === id; });
         if (!preset) return;
-
         partecipanti = preset.names.slice();
         editingIndex = -1;
         activePresetId = id;
         aggiornaInterfaccia();
         risultatoBox.style.display = 'none';
         lastResult = null;
-
         listaPartecipanti.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
     }
 
@@ -755,14 +835,12 @@
         const preset = presets.find(function (p) { return p.id === id; });
         if (!preset) return;
         if (!confirm(t('preset.confirmDelete', { name: preset.name }))) return;
-
         presets = presets.filter(function (p) { return p.id !== id; });
         if (activePresetId === id) activePresetId = null;
         savePresetsToStorage();
         renderPresets();
     }
 
-    // Sovrascrive un preset esistente con la lista attuale (chiede conferma)
     function sovrascriviPreset(id) {
         const preset = presets.find(function (p) { return p.id === id; });
         if (!preset) return;
@@ -771,7 +849,6 @@
             return;
         }
         if (!confirm(t('preset.confirmUpdate', { name: preset.name }))) return;
-
         preset.names = partecipanti.slice();
         activePresetId = preset.id;
         savePresetsToStorage();
@@ -779,7 +856,6 @@
         aggiornaInterfaccia();
     }
 
-    // Apre il modal di salvataggio e gestisce duplicati con sovrascrittura
     function salvaPreset() {
         if (partecipanti.length === 0) {
             alert(t('preset.needNames'));
@@ -787,11 +863,9 @@
         }
         apriModalPreset().then(function (nomePreset) {
             if (nomePreset === null) return;
-
             const existing = presets.find(function (p) {
                 return p.name.toLowerCase() === nomePreset.toLowerCase();
             });
-
             if (existing) {
                 apriModalOverwrite(nomePreset).then(function (conferma) {
                     if (!conferma) return;
@@ -814,6 +888,178 @@
                 aggiornaInterfaccia();
             }
         });
+    }
+
+    // ==================================================================
+    // JSON — EXPORT
+    // ==================================================================
+    function exportPresetsToJson() {
+        if (presets.length === 0) {
+            alert(t('json.exportEmpty'));
+            return;
+        }
+
+        const payload = {
+            format: 'coffee-presets',
+            version: JSON_FORMAT_VERSION,
+            exportedAt: new Date().toISOString(),
+            presets: presets.map(function (p) {
+                return { name: p.name, names: p.names.slice() };
+            })
+        };
+
+        const jsonStr = JSON.stringify(payload, null, 2);
+        const blob = new Blob([jsonStr], { type: 'application/json' });
+        const url = URL.createObjectURL(blob);
+
+        const now = new Date();
+        const stamp = now.getFullYear() +
+            String(now.getMonth() + 1).padStart(2, '0') +
+            String(now.getDate()).padStart(2, '0') + '-' +
+            String(now.getHours()).padStart(2, '0') +
+            String(now.getMinutes()).padStart(2, '0');
+        const fileName = t('json.exportFileName') + '-' + stamp + '.json';
+
+        try {
+            const a = document.createElement('a');
+            a.href = url;
+            a.download = fileName;
+            document.body.appendChild(a);
+            a.click();
+            document.body.removeChild(a);
+            setTimeout(function () { URL.revokeObjectURL(url); }, 1000);
+            alert(t('json.exportSuccess', { n: presets.length, file: fileName }));
+        } catch (e) {
+            URL.revokeObjectURL(url);
+            alert(t('json.exportError'));
+        }
+    }
+
+    // ==================================================================
+    // JSON — IMPORT
+    // ==================================================================
+    function validateImportedPreset(p) {
+        if (!p || typeof p !== 'object') return null;
+        if (typeof p.name !== 'string' || p.name.trim() === '') return null;
+        if (!Array.isArray(p.names)) return null;
+        const cleanedNames = p.names
+            .filter(function (n) { return typeof n === 'string' && n.trim() !== ''; })
+            .map(function (n) { return n.trim().slice(0, 30); });
+        if (cleanedNames.length === 0) return null;
+        return { name: p.name.trim().slice(0, 40), names: cleanedNames };
+    }
+
+    function parseImportedJson(text) {
+        let data;
+        try { data = JSON.parse(text); } catch (e) { return null; }
+
+        let rawPresets = null;
+        if (Array.isArray(data)) {
+            rawPresets = data;
+        } else if (data && typeof data === 'object') {
+            if (Array.isArray(data.presets)) rawPresets = data.presets;
+            // Supporto anche al formato interno (array con id)
+            else if (Array.isArray(data.coffeePresets)) rawPresets = data.coffeePresets;
+        }
+        if (!rawPresets) return null;
+
+        const cleaned = [];
+        rawPresets.forEach(function (p) {
+            const v = validateImportedPreset(p);
+            if (v) cleaned.push(v);
+        });
+        return cleaned;
+    }
+
+    function handleImportFile(file) {
+        if (!file) return;
+        if (file.size > 5 * 1024 * 1024) {
+            alert(t('json.importInvalid'));
+            return;
+        }
+        const reader = new FileReader();
+        reader.onload = function (ev) {
+            const text = ev.target.result;
+            const imported = parseImportedJson(text);
+            if (!imported) {
+                alert(t('json.importInvalid'));
+                return;
+            }
+            if (imported.length === 0) {
+                alert(t('json.importEmpty'));
+                return;
+            }
+            apriModalImport(imported);
+        };
+        reader.onerror = function () { alert(t('json.importInvalid')); };
+        reader.readAsText(file);
+    }
+
+    function apriModalImport(importedPresets) {
+        importModalResolve = null;
+        return new Promise(function (resolve) {
+            importModalResolve = resolve;
+
+            // Costruisci riepilogo
+            importSummary.innerHTML = '';
+            const row1 = document.createElement('div');
+            row1.className = 'import-summary-row';
+            row1.innerHTML = '<span class="import-summary-label">📦 ' +
+                t('json.importSummary', { n: importedPresets.length }) +
+                '</span>';
+            importSummary.appendChild(row1);
+
+            const row2 = document.createElement('div');
+            row2.className = 'import-summary-row';
+            row2.innerHTML = '<span class="import-summary-label">💾 ' +
+                t('json.importSummaryExisting', { n: presets.length }) +
+                '</span>';
+            importSummary.appendChild(row2);
+
+            const list = document.createElement('div');
+            list.className = 'import-summary-preset-list';
+            list.textContent = importedPresets.map(function (p) {
+                return '• ' + p.name + ' (' + p.names.length + ')';
+            }).join('  ');
+            importSummary.appendChild(list);
+
+            importModalOverlay.hidden = false;
+            setTimeout(function () { importMergeBtn.focus(); }, 50);
+        });
+    }
+
+    function chiudiModalImport(scelta) {
+        importModalOverlay.hidden = true;
+        if (importModalResolve) {
+            const r = importModalResolve;
+            importModalResolve = null;
+            r(scelta);
+        }
+    }
+
+    function applicaImport(importedPresets, mode) {
+        if (mode === 'replace') {
+            presets = importedPresets.map(function (p) {
+                return { id: genId(), name: p.name, names: p.names.slice() };
+            });
+            activePresetId = null;
+        } else {
+            // merge: unisci sovrascrivendo per nome
+            importedPresets.forEach(function (p) {
+                const existing = presets.find(function (e) {
+                    return e.name.toLowerCase() === p.name.toLowerCase();
+                });
+                if (existing) {
+                    existing.names = p.names.slice();
+                } else {
+                    presets.push({ id: genId(), name: p.name, names: p.names.slice() });
+                }
+            });
+        }
+        savePresetsToStorage();
+        renderPresets();
+        aggiornaInterfaccia();
+        alert(t(mode === 'replace' ? 'json.replaceSuccess' : 'json.mergeSuccess', { n: importedPresets.length }));
     }
 
     // ==================================================================
@@ -874,10 +1120,7 @@
     });
 
     presetNameInput.addEventListener('keypress', function (e) {
-        if (e.key === 'Enter') {
-            e.preventDefault();
-            modalSaveBtn.click();
-        }
+        if (e.key === 'Enter') { e.preventDefault(); modalSaveBtn.click(); }
     });
 
     // ==================================================================
@@ -886,8 +1129,7 @@
     function apriModalOverwrite(nomePreset) {
         return new Promise(function (resolve) {
             overwriteModalResolve = resolve;
-            overwriteModalMessage.textContent = t('preset.overwriteMessage') +
-                '\n\n"' + nomePreset + '"';
+            overwriteModalMessage.textContent = t('preset.overwriteMessage') + '\n\n"' + nomePreset + '"';
             overwriteModalOverlay.hidden = false;
             setTimeout(function () { overwriteConfirmBtn.focus(); }, 50);
         });
@@ -909,19 +1151,11 @@
         if (e.target === overwriteModalOverlay) chiudiModalOverwrite(false);
     });
 
-    document.addEventListener('keydown', function (e) {
-        if (e.key === 'Escape') {
-            if (!overwriteModalOverlay.hidden) chiudiModalOverwrite(false);
-            else if (!modalOverlay.hidden) chiudiModal(null);
-        }
-    });
-
     // ==================================================================
     // LISTA PARTECIPANTI
     // ==================================================================
     function renderListaConEditing() {
         listaPartecipanti.innerHTML = '';
-
         if (partecipanti.length === 0) {
             emptyMessage.style.display = 'block';
             return;
@@ -964,13 +1198,8 @@
                 });
 
                 input.addEventListener('keypress', function (e) {
-                    if (e.key === 'Enter') {
-                        e.preventDefault();
-                        confermaModifica(index, input.value);
-                    } else if (e.key === 'Escape') {
-                        editingIndex = -1;
-                        renderListaConEditing();
-                    }
+                    if (e.key === 'Enter') { e.preventDefault(); confermaModifica(index, input.value); }
+                    else if (e.key === 'Escape') { editingIndex = -1; renderListaConEditing(); }
                 });
 
                 li.appendChild(input);
@@ -978,10 +1207,7 @@
                 li.appendChild(cancelBtn);
                 listaPartecipanti.appendChild(li);
 
-                setTimeout(function () {
-                    input.focus();
-                    input.select();
-                }, 30);
+                setTimeout(function () { input.focus(); input.select(); }, 30);
             } else {
                 const spanNome = document.createElement('span');
                 spanNome.className = 'nome-testo';
@@ -1024,21 +1250,12 @@
 
     function confermaModifica(index, nuovoNomeRaw) {
         const nuovoNome = nuovoNomeRaw.trim();
-        if (nuovoNome === '') {
-            alert(t('edit.empty'));
-            return;
-        }
-        if (nuovoNome.length > 30) {
-            alert(t('alert.tooLong'));
-            return;
-        }
+        if (nuovoNome === '') { alert(t('edit.empty')); return; }
+        if (nuovoNome.length > 30) { alert(t('alert.tooLong')); return; }
         const duplicato = partecipanti.some(function (p, i) {
             return i !== index && p.toLowerCase() === nuovoNome.toLowerCase();
         });
-        if (duplicato) {
-            alert(t('edit.duplicate'));
-            return;
-        }
+        if (duplicato) { alert(t('edit.duplicate')); return; }
         partecipanti[index] = nuovoNome;
         editingIndex = -1;
         aggiornaInterfaccia();
@@ -1061,27 +1278,16 @@
     // AZIONI
     // ==================================================================
     function aggiungiPartecipante() {
-        if (editingIndex >= 0) {
-            editingIndex = -1;
-        }
+        if (editingIndex >= 0) editingIndex = -1;
         const nome = nomeInput.value.trim();
-
         if (nome === '') {
             nomeInput.focus();
             nomeInput.placeholder = t('alert.emptyName');
             setTimeout(function () { nomeInput.placeholder = t('input.placeholder'); }, 1500);
             return;
         }
-
-        if (nome.length > 30) {
-            alert(t('alert.tooLong'));
-            return;
-        }
-
-        const esiste = partecipanti.some(function (p) {
-            return p.toLowerCase() === nome.toLowerCase();
-        });
-
+        if (nome.length > 30) { alert(t('alert.tooLong')); return; }
+        const esiste = partecipanti.some(function (p) { return p.toLowerCase() === nome.toLowerCase(); });
         if (esiste) {
             nomeInput.value = '';
             nomeInput.placeholder = t('alert.duplicate', { name: nome });
@@ -1089,11 +1295,9 @@
             setTimeout(function () { nomeInput.placeholder = t('input.placeholder'); }, 1800);
             return;
         }
-
         partecipanti.push(nome);
         nomeInput.value = '';
         nomeInput.focus();
-
         aggiornaInterfaccia();
         risultatoBox.style.display = 'none';
         lastResult = null;
@@ -1129,21 +1333,18 @@
         const emojis = ['☕', '✨', '🎉', '💫', '⭐', '🍩', '🧁', '🍪', '❤️', '💛'];
         const scenaRect = tazzaScena.getBoundingClientRect();
         const contRect = container.getBoundingClientRect();
-
         for (let i = 0; i < count; i++) {
             const p = document.createElement('span');
             p.className = 'particella';
             p.textContent = emoji || emojis[Math.floor(Math.random() * emojis.length)];
             p.style.left = (scenaRect.left - contRect.left + scenaRect.width / 2 - 20) + 'px';
             p.style.top = (scenaRect.top - contRect.top + scenaRect.height / 2 - 20) + 'px';
-
             const angle = Math.random() * Math.PI * 2;
             const dist = 80 + Math.random() * 120;
             p.style.setProperty('--tx', (Math.cos(angle) * dist) + 'px');
             p.style.setProperty('--ty', (Math.sin(angle) * dist - 40) + 'px');
             p.style.setProperty('--rot', (Math.random() * 720 - 360) + 'deg');
             p.style.fontSize = (1 + Math.random() * 1.2) + 'rem';
-
             container.appendChild(p);
             setTimeout(function () { p.remove(); }, 1300);
         }
@@ -1155,7 +1356,6 @@
         const scenaRect = tazzaScena.getBoundingClientRect();
         const centerX = scenaRect.left - contRect.left + scenaRect.width / 2;
         const centerY = scenaRect.top - contRect.top + scenaRect.height / 2;
-
         for (let i = 0; i < 28; i++) {
             const c = document.createElement('div');
             c.className = 'confetti';
@@ -1165,14 +1365,12 @@
             c.style.width = (5 + Math.random() * 8) + 'px';
             c.style.height = (8 + Math.random() * 10) + 'px';
             c.style.borderRadius = Math.random() > 0.5 ? '50%' : '2px';
-
             const angle = Math.random() * Math.PI * 2;
             const dist = 100 + Math.random() * 220;
             c.style.setProperty('--cx', (Math.cos(angle) * dist) + 'px');
             c.style.setProperty('--cy', (Math.sin(angle) * dist + 100) + 'px');
             c.style.setProperty('--cr', (Math.random() * 900 - 450) + 'deg');
             c.style.animationDuration = (1.4 + Math.random() * 1) + 's';
-
             container.appendChild(c);
             setTimeout(function () { c.remove(); }, 2400);
         }
@@ -1196,15 +1394,8 @@
     }
 
     function sorteggia() {
-        if (partecipanti.length < 2) {
-            alert(t('alert.needTwo'));
-            return;
-        }
-
-        if (editingIndex >= 0) {
-            editingIndex = -1;
-            renderListaConEditing();
-        }
+        if (partecipanti.length < 2) { alert(t('alert.needTwo')); return; }
+        if (editingIndex >= 0) { editingIndex = -1; renderListaConEditing(); }
 
         sorteggiaBtn.disabled = true;
         sorteggiaBtn.textContent = t('btn.mixing');
@@ -1213,9 +1404,7 @@
         tazza.classList.add('shaking');
         tazza.classList.remove('celebrando');
 
-        const particleInterval = setInterval(function () {
-            creaParticelle('✨', 2);
-        }, 180);
+        const particleInterval = setInterval(function () { creaParticelle('✨', 2); }, 180);
 
         setTimeout(function () {
             clearInterval(particleInterval);
@@ -1237,9 +1426,7 @@
             sorteggiaBtn.disabled = false;
             sorteggiaBtn.textContent = t('btn.sorteggia');
 
-            setTimeout(function () {
-                tazza.classList.remove('celebrando');
-            }, 1000);
+            setTimeout(function () { tazza.classList.remove('celebrando'); }, 1000);
         }, 1800);
     }
 
@@ -1259,14 +1446,9 @@
         else openLangMenu();
     }
 
-    langToggle.addEventListener('click', function (e) {
-        e.stopPropagation();
-        toggleLangMenu();
-    });
+    langToggle.addEventListener('click', function (e) { e.stopPropagation(); toggleLangMenu(); });
     document.addEventListener('click', function (e) {
-        if (!langMenu.contains(e.target) && !langToggle.contains(e.target)) {
-            closeLangMenu();
-        }
+        if (!langMenu.contains(e.target) && !langToggle.contains(e.target)) closeLangMenu();
     });
     document.addEventListener('keydown', function (e) {
         if (e.key === 'Escape') closeLangMenu();
@@ -1280,18 +1462,78 @@
     });
 
     // ==================================================================
+    // GESTIONE ESC PER TUTTI I MODAL
+    // ==================================================================
+    document.addEventListener('keydown', function (e) {
+        if (e.key !== 'Escape') return;
+        if (!importModalOverlay.hidden) chiudiModalImport(null);
+        else if (!overwriteModalOverlay.hidden) chiudiModalOverwrite(false);
+        else if (!modalOverlay.hidden) chiudiModal(null);
+    });
+
+    // ==================================================================
     // EVENT LISTENER AZIONI
     // ==================================================================
     addBtn.addEventListener('click', aggiungiPartecipante);
     nomeInput.addEventListener('keypress', function (e) {
-        if (e.key === 'Enter') {
-            e.preventDefault();
-            aggiungiPartecipante();
-        }
+        if (e.key === 'Enter') { e.preventDefault(); aggiungiPartecipante(); }
     });
     sorteggiaBtn.addEventListener('click', sorteggia);
     resetBtn.addEventListener('click', resetTutto);
     salvaPresetBtn.addEventListener('click', salvaPreset);
+
+    // Export JSON
+    exportJsonBtn.addEventListener('click', exportPresetsToJson);
+
+    // Import JSON
+    importJsonBtn.addEventListener('click', function () {
+        importFileInput.value = '';
+        importFileInput.click();
+    });
+
+    importFileInput.addEventListener('change', function (e) {
+        const file = e.target.files && e.target.files[0];
+        if (file) handleImportFile(file);
+    });
+
+    // Modal import: merge / replace / cancel
+    importMergeBtn.addEventListener('click', function () {
+        // Recupera i preset importati in attesa
+        const imported = importModalPendingData;
+        chiudiModalImport('merge');
+        if (imported) applicaImport(imported, 'merge');
+    });
+
+    importReplaceBtn.addEventListener('click', function () {
+        const imported = importModalPendingData;
+        chiudiModalImport('replace');
+        if (imported) applicaImport(imported, 'replace');
+    });
+
+    importCancelBtn.addEventListener('click', function () {
+        chiudiModalImport(null);
+    });
+
+    importModalOverlay.addEventListener('click', function (e) {
+        if (e.target === importModalOverlay) chiudiModalImport(null);
+    });
+
+    // ==================================================================
+    // WRAPPER per gestire la promise del modal import
+    // ==================================================================
+    let importModalPendingData = null;
+
+    const _originalApri = apriModalImport;
+    apriModalImport = function (importedPresets) {
+        importModalPendingData = importedPresets;
+        return _originalApri(importedPresets);
+    };
+
+    const _originalChiudi = chiudiModalImport;
+    chiudiModalImport = function (scelta) {
+        if (scelta === null) importModalPendingData = null;
+        return _originalChiudi(scelta);
+    };
 
     // ==================================================================
     // AVVIO
